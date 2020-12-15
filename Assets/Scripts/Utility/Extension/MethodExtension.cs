@@ -4,7 +4,9 @@ using UnityEngine;
 
 public static class MethodExtension
 {
-    static public T GetOrAddComponent<T>(this Component comp) where T : Component
+    #region UnityComponent
+
+    public static T GetOrAddComponent<T>(this Component comp) where T : Component
     {
         T result = comp.GetComponent<T>();
         if(result == null)
@@ -12,21 +14,6 @@ public static class MethodExtension
             result = comp.gameObject.AddComponent<T>();
         }
         return result;
-    }
-
-    static public T GetOrAddComponent<T>(this UnityEngine.GameObject go) where T : Component
-    {
-        T result = go.GetComponent<T>();
-        if(result == null)
-        {
-            result = go.AddComponent<T>();
-        }
-        return result;
-    }
-
-    public static T AddComponent<T>(this GameObject go, T toAdd) where T : Component
-    {
-        return go.AddComponent<T>().GetCopyOf(toAdd) as T;
     }
 
     public static T GetCopyOf<T>(this Component comp, T other) where T : Component
@@ -69,20 +56,33 @@ public static class MethodExtension
         action?.Invoke();
     }
 
+    #endregion
+
+    #region UnityGameObject
+
+    static public T GetOrAddComponent<T>(this UnityEngine.GameObject go) where T : Component
+    {
+        T result = go.GetComponent<T>();
+        if(result == null)
+        {
+            result = go.AddComponent<T>();
+        }
+        return result;
+    }
+
+    public static T AddComponent<T>(this GameObject go, T toAdd) where T : Component
+    {
+        return go.AddComponent<T>().GetCopyOf(toAdd) as T;
+    }
+
+    #endregion
+
+    #region SystemList
+
     public static bool IsNullOrEmpty<T>(this List<T> list)
     {
         return list == null || list.Count == 0;
     }
-
-    public static string ToColorString(this Color color)
-    {
-        return $"<color=#{ColorUtility.ToHtmlStringRGB(color)}>";
-    }
-    public static string ToColorString(this Color color, string str)
-    {
-        return $"<color=#{ColorUtility.ToHtmlStringRGB(color)}>{str}</color>";
-    }
-
 
     public static void AddIfNoExist<T>(this List<T> list, T item)
     {
@@ -91,4 +91,20 @@ public static class MethodExtension
             list.Add(item);
         }
     }
+
+    #endregion
+
+    #region color
+
+    public static string ToColorString(this Color color)
+    {
+        return $"<color=#{ColorUtility.ToHtmlStringRGB(color)}>";
+    }
+
+    public static string ToColorString(this Color color, string str)
+    {
+        return $"<color=#{ColorUtility.ToHtmlStringRGB(color)}>{str}</color>";
+    }
+
+    #endregion
 }
