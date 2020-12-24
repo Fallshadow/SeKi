@@ -2,10 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SKFramework
+public class State<T>
 {
-    public class State : MonoBehaviour
-    {
 
-    }
 }

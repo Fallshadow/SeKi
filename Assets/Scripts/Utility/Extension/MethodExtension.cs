@@ -16,6 +16,13 @@ public static class MethodExtension
         return result;
     }
 
+    /// <summary>
+    /// 复制组件内容
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="comp"></param>
+    /// <param name="other"></param>
+    /// <returns></returns>
     public static T GetCopyOf<T>(this Component comp, T other) where T : Component
     {
         Type type = comp.GetType();
