@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace act.ui
+namespace ASeKi.Ui
 {
     public class UiItem : MonoBehaviour
     {

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace act.ui
+namespace ASeKi.Ui
 {
     /// <summary>
     /// 會將UI物件拓展至最大數量，避免一直新增刪除物件。
