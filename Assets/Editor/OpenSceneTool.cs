@@ -7,18 +7,38 @@ public static class OpenSceneTool
     private const string SceneExtension = ".unity";
     private const string SceneFullName = SceneFolder + "/{0}" + SceneExtension;
 
+    private const string Entry = "Entry";
+
+
     [MenuItem("OpenSceneTool/Open " + "Entry")]
     public static void OpenEntryScene()
     {
-
+        OpenScene(Entry);
     }
 
-    public static void OpenScene(string sceneName)
+    public static void OpenScene(string sceneName,bool isFullPath = false)
     {
         if(EditorApplication.isPlaying)
         {
             return;
         }
 
+        if(EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo())
+        {
+            if(isFullPath)
+            {
+                EditorSceneManager.OpenScene(sceneName);
+            }
+            else
+            {
+                // 保存了场景
+                string scenePath = string.Format(SceneFullName, sceneName);
+                EditorSceneManager.OpenScene(scenePath);
+            }
+        }
+        else
+        {
+            // 遗弃了修改，是不是要做点啥
+        }
     }
 }

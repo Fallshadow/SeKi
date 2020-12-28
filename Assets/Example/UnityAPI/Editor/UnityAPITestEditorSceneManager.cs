@@ -53,4 +53,11 @@ public class UnityAPITestEditorSceneManager
                     3）将GameObjects从一个场景拖到另一个场景会导致跨场景引用。发生这种情况时，不再记录警告。");
         Debug.Log(EditorSceneManager.preventCrossSceneReferences);
     }
+
+    [MenuItem("UnityStudy/Editor/SceneManagement/EditorSceneManager/StaticMethod_SaveCurrentModifiedScenesIfUserWantsTo")]
+    public static void StaticMethod_SaveCurrentModifiedScenesIfUserWantsTo()
+    {
+        Debug.Log("如果场景有改变，询问下是否要保存场景");
+        Debug.Log(EditorSceneManager.SaveCurrentModifiedScenesIfUserWantsTo());
+    }
 }
