@@ -43,6 +43,13 @@ public class UnityAPITestEditorSceneManager
         }
     }
 
+    [MenuItem("UnityStudy/Editor/SceneManagement/EditorSceneManager/PropTest_ResetplayModeStartScene")]
+    public static void PropTest_ResetplayModeStartScene()
+    {
+        Debug.Log("重置");
+        EditorSceneManager.playModeStartScene = null;
+    }
+
     [MenuItem("UnityStudy/Editor/SceneManagement/EditorSceneManager/Prop_preventCrossScene")]
     public static void Prop_preventCrossScene()
     {
