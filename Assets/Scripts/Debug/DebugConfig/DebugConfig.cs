@@ -2,17 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DebugConfig : MonoBehaviour
+namespace ASeKi.debug
 {
-    // Start is called before the first frame update
-    void Start()
+    public class DebugConfig : SingletonMonoBehavior<DebugConfig>
     {
-        
-    }
+        [Header("----输出日志查看----")]
+        public PrintSystem.PrintBy WatchLogger;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        protected override void init()
+        {
+            updatePrinter();
+            PrintSystem.UpdatePrinterEvent = updatePrinter;
+        }
+
+        void updatePrinter()
+        {
+            PrintSystem.OutPutLogger = WatchLogger;
+        }
     }
 }

@@ -7,6 +7,7 @@ namespace ASeKi.Ui
     {
         public int Index { get; protected set; }
 
+        [SerializeField] protected GameObject[] goes = null;
         [SerializeField] protected Button[] buttons = null;
         [SerializeField] protected Image[] images = null;
         [SerializeField] protected Text[] texts = null;
@@ -24,6 +25,11 @@ namespace ASeKi.Ui
         public Text GetText(int i)
         {
             return texts[i];
+        }
+
+        public GameObject GetGo(int i)
+        {
+            return goes[i];
         }
     }
 
@@ -32,6 +38,7 @@ namespace ASeKi.Ui
         public int Index { get; protected set; }
         public T Data { get; protected set; }
 
+        [SerializeField] protected GameObject[] goes = null;
         [SerializeField] protected Button[] buttons = null;
         [SerializeField] protected Image[] images = null;
         [SerializeField] protected Text[] texts = null;
@@ -49,6 +56,11 @@ namespace ASeKi.Ui
         public Text GetText(int i)
         {
             return texts[i];
+        }
+
+        public GameObject GetGo(int i)
+        {
+            return goes[i];
         }
 
         public abstract void UpdateItem(int index, T data);

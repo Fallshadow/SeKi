@@ -573,7 +573,8 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    4: SeKiDebug
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}
