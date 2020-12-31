@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da167c68aea12a148a8541ee6eb56c39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WatchLogger: 0
+  WatchLogger: 2
 --- !u!1 &1373877118
 GameObject:
   m_ObjectHideFlags: 0
