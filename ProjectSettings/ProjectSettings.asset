@@ -667,7 +667,9 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
+    1: SeKiDebug
     4: SeKiDebug
+    7: SeKiDebug
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UiStrage : MonoBehaviour
+public class UiBase : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
