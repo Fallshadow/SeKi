@@ -8,12 +8,19 @@ public static class OpenSceneTool
     private const string SceneFullName = SceneFolder + "/{0}" + SceneExtension;
 
     private const string Entry = "Entry";
+    private const string Test = "Test";
 
 
-    [MenuItem("OpenSceneTool/Open " + "Entry")]
+    [MenuItem("OpenSceneTool/Open " + Entry)]
     public static void OpenEntryScene()
     {
         OpenScene(Entry);
+    }
+
+    [MenuItem("OpenSceneTool/Open " + Test)]
+    public static void OpenTestScene()
+    {
+        OpenScene(Test);
     }
 
     public static void OpenScene(string sceneName,bool isFullPath = false)
