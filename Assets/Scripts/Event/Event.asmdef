@@ -1,0 +1,15 @@
+{
+    "name": "Event",
+    "references": [
+        "GUID:b13429e975d14e6478c61e7de9ed031c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
