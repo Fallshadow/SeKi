@@ -17,4 +17,10 @@
         SYSTEMSETTING,//系统设置
         LOGIN, // 登陆
     }
+
+    public enum UiEvent : short
+    {
+        UI_BASE_SHOW,
+        UI_BASE_HIDE,
+    }
 }

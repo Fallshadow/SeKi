@@ -5,7 +5,7 @@ namespace ASeKi.Utility
     // 主要提供接口：异步加载/加载/实例化 --> 预制体、SO
     public static class LoadResources
     {
-        //加载该路径预制体  路径  检查是否存在  是否打印错误（是否严重）
+        // 加载该路径预制体  路径  检查是否存在  是否打印错误（是否严重）
         public static GameObject LoadPrefab(string path, bool checkExisted = false, bool showErrorLog = true)
         {
             Object obj = Resources.Load(path);
@@ -27,7 +27,7 @@ namespace ASeKi.Utility
             return InstantiateObject(obj);
         }
 
-        //加载该路径预制体  路径  父物体  检查是否存在  是否打印错误（是否严重）
+        // 加载该路径预制体  路径  父物体  检查是否存在  是否打印错误（是否严重）
         public static GameObject LoadPrefab(string path, Transform parent, bool checkExisted = false,bool showErrorLog = true)
         {
             Object obj = Resources.Load(path);

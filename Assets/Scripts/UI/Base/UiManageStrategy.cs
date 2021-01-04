@@ -4,6 +4,18 @@ using UnityEngine;
 
 namespace ASeKi.ui
 {
+    public enum UiOpenType
+    {
+        UOT_COMMON = 0,
+        UOT_FULL_SCREEN = 1,    // 全屏大型Canvas  可以叠加，只能通过操作打开
+        UOT_POP_UP = 2,         // 弹出/置顶类     可以叠加，只能通过操作打开
+        UOT_NOTICE = 3,         // 通知            可以叠加但是无需等待动画播放完毕，通过服务端通知
+        UOT_PLOT = 4,           // 剧情动画UI       
+        UOT_PERSPECTIVE = 5,    // 正交UI
+        UOT_GUIDE = 6,          // 引导UI
+        UOT_PHOTO = 7,          // 截屏UI
+    }
+
     public class UiManageStrategy
     {
         public RectTransform MainRoot { get { return fullScreenRoot; } }
