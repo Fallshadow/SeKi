@@ -669,7 +669,7 @@ PlayerSettings:
   scriptingDefineSymbols:
     1: SeKiDebug
     4: SeKiDebug
-    7: SeKiDebug
+    7: SeKiDebug;DEBUG_RESOURCE
   platformArchitecture: {}
   scriptingBackend: {}
   il2cppCompilerConfiguration: {}

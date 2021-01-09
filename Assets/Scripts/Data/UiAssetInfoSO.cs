@@ -44,7 +44,7 @@ namespace ASeKi.data
 
         private static UiAssetInfoSO instance;
 
-        public int GetUiAssetInfo(UiAssetType type, string name)
+        public int GetUiAssetHashCode(UiAssetType type, string name)
         {
             for(int i = 0; i < UiAssetInfos.Count; i++)
             {

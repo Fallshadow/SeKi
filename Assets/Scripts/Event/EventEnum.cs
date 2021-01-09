@@ -22,5 +22,7 @@
     {
         UI_BASE_SHOW,
         UI_BASE_HIDE,
+        ALL_FULL_SCREEN_CANVAS_CLOSED,                      // 所有全屏UI都关闭了
+        ALL_FULL_SCREEN_CANVAS_CLOSED_BUT_DEFUALT,          // 仅仅剩下一个默认全屏UI
     }
 }
