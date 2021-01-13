@@ -16,6 +16,7 @@
         HOMELAND,
         SYSTEMSETTING,//系统设置
         LOGIN, // 登陆
+        BUFF,
     }
 
     public enum UiEvent : short
@@ -24,5 +25,11 @@
         UI_BASE_HIDE,
         ALL_FULL_SCREEN_CANVAS_CLOSED,                      // 所有全屏UI都关闭了
         ALL_FULL_SCREEN_CANVAS_CLOSED_BUT_DEFUALT,          // 仅仅剩下一个默认全屏UI
+    }
+
+    public enum BuffEvent : short
+    {
+        BUFF_ATTACH_APPLY,                                  // 申请挂载BUFF
+
     }
 }
