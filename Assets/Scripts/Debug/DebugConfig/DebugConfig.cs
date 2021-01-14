@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ASeKi.debug
 {
-    public class DebugConfig : SingletonMonoBehavior<DebugConfig>
+    public class DebugConfig : SingletonMonoBehaviorNoDestroy<DebugConfig>
     {
         [Tooltip("AB包加载开关")]    // 默认在制作过程中可以关闭
         public bool DisableAssetBundle = false;

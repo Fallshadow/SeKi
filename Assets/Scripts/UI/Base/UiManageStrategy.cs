@@ -38,7 +38,7 @@ namespace ASeKi.ui
         private LinkedList<UiBase> perspectiveCanvases = new LinkedList<UiBase>();
         private LinkedList<UiBase> guideUis = new LinkedList<UiBase>();
         private LinkedList<UiBase> photoUis = new LinkedList<UiBase>();
-        private UiBase defualtUi = null;            // 一般游戏都会有一个默认的UI，比如主城、战斗
+        // private UiBase defualtUi = null;            // 一般游戏都会有一个默认的UI，比如主城、战斗
         public UiManageStrategy(RectTransform[] roots)
         {
             fullScreenRoot = roots[0];

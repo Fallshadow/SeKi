@@ -2,14 +2,40 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ASeKi.game
+namespace ASeKi.battle
 {
+    // buff挂载的种类，是单个挂载还是替换还是叠加（目前只有这几种）还没有涉及到成批添加
+    public enum BuffAttachType : byte
+    {
+        ATTACH = 1,
+        REPLACE,
+        ATTACH_FRESH,
+        ATTACH_ADDTIVE,
+    }
+
+    // buff消除的种类，是把ID相同的消除还是把种类为X的消除等等
+    public enum BuffDetachType : byte
+    {
+        DETACH_ID,
+        DETACH_CONFIG_ID,
+        DETACH_GROUP,
+        DETACH_SORT,
+        DETACH_TYPE,
+        DETACH_ALL,
+    }
+
     public class BuffManager : Singleton<BuffManager>
     {
         private BuffAttachApplyData buffAttachApplyData = new BuffAttachApplyData();
 
         private Dictionary<ulong, Carrier> dictCarrier = new Dictionary<ulong, Carrier>();
 
+        public void DetachBuff(Buff buff)
+        {
+            detachBuffInternal(buff.CarrierID, buff.Id, BuffDetachType.DETACH_ID);
+        }
+
+        // 创建、挂载BUFF
         public uint AttachBuff(ulong source, ulong carrier, int configId, int curSkillId = 0)
         {
             if(configId == 0)
@@ -25,8 +51,6 @@ namespace ASeKi.game
             }
             return getCarrier(carrier).AttachBuff(source, carrier, configId, curSkillId);
         }
-
-        
 
         // 申请挂载BUFF，得到的回应储存在BuffAttachApplyData中，游戏中保持一份，防止内存占用，由于也是立即使用所以也不用太过担心
         private void SendAttachApply(ulong source, ulong carrier, int configId)
@@ -48,6 +72,11 @@ namespace ASeKi.game
             }
 
             return carrier;
+        }
+
+        private void detachBuffInternal(ulong carrierID,uint buffID,BuffDetachType detachType)
+        {
+            Carrier carrier = getCarrier(carrierID);
         }
     }
 }

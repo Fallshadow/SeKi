@@ -23,7 +23,7 @@ namespace ASeKi.ui
         public Camera PerspectiveCamera { get => perspectiveCamera; }
 
         [SerializeField] private Camera uiCamera = null;
-        [SerializeField] private EventSystem eventSystem = null;
+        // [SerializeField] private EventSystem eventSystem = null;
         [SerializeField] private Camera photoCamera = null; //专门用于拍照相机
         [SerializeField] private Camera perspectiveCamera = null;
 

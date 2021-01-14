@@ -59,22 +59,21 @@ namespace ASeKi.AssetBundleCore
             unloadList = new HashSet<int>();
         }
 
-        // 拿着本地记录的哈希去资源中找，然后优先使用已经保存过的代理，如果该资源Hash没有进入异步加载列表，就直接通过fast方式进行读取
+        // 拿着本地记录的哈希去资源中找，直接通过fast方式进行读取
         public override T LoadAsset<T>(int hash)
         {
             AssetInfoSimplify assetInfo;
             if(s_assetInfos.TryGetValue(hash, out assetInfo))
             {
                 ISyncProxy syncloader;
+                debug.PrintSystem.Log($"[FastModeLoaderManager] 通过SyncAssetProxy_Fast直接去加载资源{hash}", debug.PrintSystem.PrintBy.sunshuchao);
                 if(this.syncProxys.TryGetValue(hash, out syncloader))
                 {
-                    debug.PrintSystem.Log($"[FastModeLoaderManager] 通过syncProxys异步加载资源{hash}", debug.PrintSystem.PrintBy.sunshuchao);
                     syncloader.Addreference();
                     return ((SyncAssetProxy_Fast<T>)syncloader).GetAsset();
                 }
                 else
                 {
-                    debug.PrintSystem.Log($"[FastModeLoaderManager] 通过SyncAssetProxy_Fast直接去加载资源{hash}", debug.PrintSystem.PrintBy.sunshuchao);
                     SyncAssetProxy_Fast<T> proxyFast = new SyncAssetProxy_Fast<T>();
                     proxyFast.SetInfoData(ref assetInfo);
                     proxyFast.Begin();

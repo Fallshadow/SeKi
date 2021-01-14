@@ -1,6 +1,6 @@
 ﻿
 
-namespace ASeKi.game
+namespace ASeKi.battle
 {
     class BuffAttachApplyData
     {
