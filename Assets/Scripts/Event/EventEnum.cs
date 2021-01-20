@@ -33,5 +33,6 @@
         BUFF_ATTACH,                                        // 挂载BUFF，给对应监听者发送所需信息 暂时无用
         BUFF_UPDATE,                                        // BUFF更新事件
         BUFF_DETACH,                                        // BUFF卸载事件
+        BUFF_REPLACE,                                       // BUFF替换事件
     }
 }

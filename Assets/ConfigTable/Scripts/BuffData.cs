@@ -6,6 +6,7 @@ namespace ConfigTable
 {
     public class BuffData
     {
+        public bool IsNull;
         // ID
         public int buff_id;
         // Buff名称
@@ -41,7 +42,7 @@ namespace ConfigTable
         // 事件交互目标状态条件
         public int event_target_condition;
         // 载体状态条件
-        public int carrier_conditions;
+        public string[] carrier_conditions;
         // 作用目标类型
         public int target_type;
         // 作用范围
@@ -57,13 +58,13 @@ namespace ConfigTable
         // 作用效果生效几率
         public int effect_probability;
         // 属性效果
-        public int attr_effects;
+        public ConfigTable.BuffAttrConfig[] attr_effects;
         // 特殊作用效果目标状态条件
         public int effect_target_condition;
         // 特殊作用效果
-        public int element_effects;
+        public BuffEffectConfig[] element_effects;
         // 移除作用效果
-        public int remove_effects;
+        public BuffEffectConfig[] remove_effects;
         // buff挂载时音效
         public int sound_done;
         // buff作用时音效
@@ -91,9 +92,9 @@ namespace ConfigTable
         // 叠加额外效果层数
         public int addtive_effect_layer;
         // 叠加额外效果类型
-        public int addtive_effect;
+        public ConfigTable.BuffEffectConfig addtive_effect;
         // 限定BuffFlag
-        public int state_flags;
+        public string[] state_flags;
         // BuffFlag变更时移除
         public int stage_change_remove;
         // Buff提前结束类型
@@ -106,6 +107,12 @@ namespace ConfigTable
         public BuffData(int ID)
         {
             buff_id = ID;
+        }
+
+        public static BuffData ByID(int configID)
+        {
+            BuffData buffData = new BuffData(0);
+            return buffData;
         }
     }
 }

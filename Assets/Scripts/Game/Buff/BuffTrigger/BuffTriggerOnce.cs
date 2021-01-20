@@ -4,6 +4,10 @@ namespace ASeKi.battle
 { 
     public abstract class BuffTriggerOnce : BuffTrigger
     {
+        public override void FakeToReal()
+        {
+            //什么也不用做
+        }
         public override void Start()
         {
             trigger();
@@ -16,12 +20,12 @@ namespace ASeKi.battle
 
         private void trigger()
         {
-            if(!CheckTriggerCondition())
+            if(!this.CheckTriggerCondition())
             {
                 return;
             }
 
-            buff.TriggerWithoutNet(0);
+            buff.TriggerWithNet(0);
         }
     }
 }

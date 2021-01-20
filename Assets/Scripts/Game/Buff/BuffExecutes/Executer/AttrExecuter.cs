@@ -4,6 +4,17 @@ namespace ASeKi.battle
     // 应用到属性上的效果
     public class AttrExecuter : BuffExecuter
     {
+        public ConfigTable.BuffAttrConfig AttrConfig
+        {
+            get;
+            private set;
+        }
+
+        public void Init(ConfigTable.BuffAttrConfig config, Buff buff)
+        {
+            AttrConfig = config;
+            this.buff = buff;
+        }
         //public Framework.StructAttr AttrConfig
         //{
         //    get;

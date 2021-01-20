@@ -6,24 +6,23 @@
 
         public static bool CheckNativeLogic(ulong entityId = 0)
         {
-            //Hero mainPlayer = BattleActorManager.instance.MainPlayer;
-            //if(mainPlayer != null && entityId == mainPlayer.ID)
-            //{
-            //    return true;
-            //}
+            Hero mainPlayer = BattleActorManager.instance.MainPlayer;
+            if(mainPlayer != null && entityId == mainPlayer.ID)
+            {
+                return true;
+            }
 
             //if(!Model.Battle.isHost)
             //{
             //    return false;
             //}
 
-            //Entity entity = BattleActorManager.instance.GetActorById(entityId);
-            //if(entity is Monster || entity is InteractObject)
-            //{
-            //    return true;
-            //}
-            //return false;
-            return true;
+            Entity entity = BattleActorManager.instance.GetActorById(entityId);
+            if(entity is Monster || entity is InteractObject)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

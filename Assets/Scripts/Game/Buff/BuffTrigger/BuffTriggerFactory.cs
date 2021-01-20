@@ -19,7 +19,7 @@ namespace ASeKi.battle
             //types.Add(BuffCarrierTrigger.SKILL_HITTED, typeof(BuffTriggerSkillHitted));
         }
 
-        public static BuffTrigger Create(BuffCarrierTrigger triggerType, Buff buff)
+        public static BuffTrigger Create(BuffCarrierTrigger triggerType, Buff buff, bool sendAttachRequest = false)
         {
             ObjectPool<object> pool = null;
             if(!pools.TryGetValue(triggerType,out pool))

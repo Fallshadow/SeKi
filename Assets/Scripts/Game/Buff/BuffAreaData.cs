@@ -3,7 +3,7 @@
 namespace ASeKi.battle
 {
     // 绘制BUFF区域
-    class BuffAreaData
+    public class BuffAreaData
     {
         public Vector3 Position;
         public Quaternion Rotation;

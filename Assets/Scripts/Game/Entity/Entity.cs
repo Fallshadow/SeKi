@@ -22,12 +22,34 @@ namespace ASeKi.battle
         public bool IsGrounded { get; protected set; }
         public float GroundDistance { get; set; }
 
+        protected Dictionary<System.Type, EntityComponent> ghostComponentDic = new Dictionary<System.Type, EntityComponent>();
+
         public Entity()
         {
             RootGo = null;
             Type = EntityType.ET_MONSTER;
             IsGrounded = false;
             GroundDistance = 0f;
+        }
+
+        public T GetComponent<T>() where T : EntityComponent
+        {
+            if(ghostComponentDic.ContainsKey(typeof(T)))
+            {
+                return ghostComponentDic[typeof(T)] as T;
+            }
+            return null;
+        }
+
+        protected LinkComponent linkC = null;
+
+        public LinkComponent LinkC()
+        {
+            if(linkC == null)
+            {
+                linkC = GetComponent<LinkComponent>();
+            }
+            return linkC;
         }
     }
 }

@@ -1,23 +1,29 @@
-﻿using UnityEngine;
+﻿using System;
 using System.Collections.Generic;
 
 namespace ASeKi.battle
 {
-    
     class BuffFactory
     {
         private Dictionary<ulong, int> buffDict = new Dictionary<ulong, int>();
 
         private ASeKi.Utility.ObjectPool<Buff> buffPool = new ASeKi.Utility.ObjectPool<Buff>();
         
-        const int SEQUENCE_OFFSET = 16;                         // 动态id基于user id的左偏移
 
         // BUFF 动态ID 由源目标ID和动态递增ID构成 
         public uint GetDynamicBuffId(ulong source)
         {
             int sequenceId = getSequenceNumID(source);
-            ulong offsetSource = source << SEQUENCE_OFFSET;
+            ulong offsetSource = BuffCarrierUtil.GetDynamicIdCarrierPart(source);
             return (uint)((uint)offsetSource + sequenceId);
+        }
+
+        private int getSequenceNumID(ulong source)
+        {
+            buffDict.TryGetValue(source, out var sequenceId);
+            sequenceId++;
+            buffDict[source] = sequenceId;
+            return sequenceId;
         }
 
         public Buff CreateBuff(ulong source,ulong carrier,int configID,uint dynamicID)
@@ -35,12 +41,18 @@ namespace ASeKi.battle
             buffPool.Release(buff);
         }
 
-        private int getSequenceNumID(ulong source)
+        public void SetMaxSequence(ulong source, uint dynamicId)
         {
-            buffDict.TryGetValue(source, out var sequenceId);
-            sequenceId++;
-            buffDict[source] = sequenceId;
-            return sequenceId;
+            int sequenceId = (int)(dynamicId & 0x00FF);
+            buffDict.TryGetValue(source, out int saveSequenceId);
+            saveSequenceId = Math.Max(saveSequenceId, sequenceId);
+            buffDict[source] = saveSequenceId;
+        }
+
+        public void Clear()
+        {
+            buffDict.Clear();
+            buffPool.Clear();
         }
     }
 }
