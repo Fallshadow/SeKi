@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\wwwsu\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\system\resharper-host\Local\Transient\ReSharperHost\v192\SolutionCaches\_SeKi.-38938868.00" t="ExcludeRecursive" />
+    <e p="F:\SeKi\SeKi" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="AssetBundleCore.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="3rd-Party" t="Include">
+          <e p="AssetBundle" t="Include">
+            <e p="Core" t="Include">
+              <e p="AssetBundleCore.asmdef" t="Include" />
+              <e p="AssetBundleDependecesSO.cs" t="Include" />
+              <e p="AssetBundleLoader" t="Include">
+                <e p="AssetBundleLoaderManager.cs" t="Include" />
+                <e p="AssetBundleProxy.cs" t="Include" />
+                <e p="SyncAssetProxy.cs" t="Include" />
+              </e>
+              <e p="AssetbundlePathSetting.cs" t="Include" />
+              <e p="ResourceLoader" t="Include">
+                <e p="FastModeLoaderManager.cs" t="Include" />
+                <e p="ResourceLoaderManager.cs" t="Include" />
+              </e>
+              <e p="ResourceLoaderProxy.cs" t="Include" />
+            </e>
+            <e p="ResourceLoaderLauncher.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ConfigTable" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="BuffAreaData.cs" t="Include" />
+            <e p="BuffAttrConfig.cs" t="Include" />
+            <e p="BuffData.cs" t="Include" />
+            <e p="BuffEffectConfig.cs" t="Include" />
+            <e p="BuffSortTarget.cs" t="Include" />
+            <e p="BuffTargetType.cs" t="Include" />
+            <e p="ConfigTable.asmdef" t="Include" />
+            <e p="目前是虚拟的配置表，日后完善请删除该文档.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="Game" t="Include">
+            <e p="Buff" t="Include">
+              <e p="BuffDebugEditor.cs" t="Include" />
+            </e>
+          </e>
+          <e p="OpenSceneTool.cs" t="Include" />
+        </e>
+        <e p="Example" t="Include">
+          <e p="Android" t="Include">
+            <e p="AndroidTest.cs" t="Include" />
+          </e>
+          <e p="C#API" t="Include">
+            <e p="DataTimeTest.cs" t="Include" />
+            <e p="NewClassTest.cs" t="Include" />
+            <e p="QuestionMarkTest.cs" t="Include" />
+          </e>
+          <e p="Problem" t="Include">
+            <e p="UIAndSetParentFalse" t="Include">
+              <e p="父物体设置为False的情况下生成子物体，然后对子物体设置大小会失效.txt" t="Include" />
+              <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />
+            </e>
+          </e>
+          <e p="UiUtility" t="Include">
+            <e p="SekiInfiniteScroll" t="Include">
+              <e p="SekiInfiniteScrollTest.cs" t="Include" />
+              <e p="WeaponData.cs" t="Include" />
+              <e p="WeaponUiItem.cs" t="Include" />
+            </e>
+          </e>
+          <e p="UnityAPI" t="Include">
+            <e p="Asset" t="Include">
+              <e p="Editor" t="Include">
+                <e p="AssetBundleBuildTest.cs" t="Include" />
+                <e p="UiAssetInfoEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Audio" t="Include">
+              <e p="UnityAPIMicRecord.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="UnityAPITestDrawGizmo.cs" t="Include" />
+              <e p="UnityAPITestDrawGizmoComponentTest.cs" t="Include" />
+              <e p="UnityAPITestEditorSceneManager.cs" t="Include" />
+              <e p="UnityAPITestEditorWindow.cs" t="Include" />
+              <e p="UnityAPITestInitializeOnLoad.cs" t="Include" />
+              <e p="UnityAPITestMenuItem.cs" t="Include" />
+            </e>
+            <e p="Mono" t="Include">
+              <e p="UnityAPIMonoInvokeTest.cs" t="Include" />
+              <e p="UnityAPIMonoInvokeTestInput.cs" t="Include" />
+            </e>
+            <e p="Time" t="Include">
+              <e p="UnityAPITestTime.cs" t="Include" />
+            </e>
+            <e p="UnityAPITestSample.cs" t="Include" />
+            <e p="UnityAPITestSystemInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Constant" t="Include">
+            <e p="Constant.asmdef" t="Include" />
+            <e p="Setting" t="Include">
+              <e p="ConfigSetting.cs" t="Include" />
+              <e p="Game" t="Include">
+                <e p="Buff" t="Include">
+                  <e p="BuffCarrierTrigger.cs" t="Include" />
+                  <e p="BuffConflictType.cs" t="Include" />
+                  <e p="BuffEffectType.cs" t="Include" />
+                  <e p="BuffFinishType.cs" t="Include" />
+                </e>
+              </e>
+              <e p="ResourcesPathSetting.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Data" t="Include">
+            <e p="UiAssetInfoSO.cs" t="Include" />
+          </e>
+          <e p="Debug" t="Include">
+            <e p="DebugConfig" t="Include">
+              <e p="DebugConfig.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Event" t="Include">
+            <e p="Event.asmdef" t="Include" />
+            <e p="EventEnum.cs" t="Include" />
+            <e p="EventHandler.cs" t="Include" />
+            <e p="EventManager.cs" t="Include" />
+            <e p="NetworkEvent.cs" t="Include" />
+          </e>
+          <e p="FSM" t="Include">
+            <e p="Game" t="Include">
+              <e p="Entry.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Game" t="Include">
+            <e p="Action" t="Include">
+              <e p="ActionManager.cs" t="Include" />
+            </e>
+            <e p="Battle" t="Include">
+              <e p="BattleActorManager.cs" t="Include" />
+              <e p="BattleManager_Define.cs" t="Include" />
+              <e p="BattleMonsterStatus.cs" t="Include" />
+              <e p="Player" t="Include">
+                <e p="HeroAttributesSystem.cs" t="Include" />
+                <e p="HeroLogic.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Buff" t="Include">
+              <e p="Buff.cs" t="Include" />
+              <e p="BuffAreaData.cs" t="Include" />
+              <e p="BuffAttachApplyData.cs" t="Include" />
+              <e p="BuffEffect.cs" t="Include" />
+              <e p="BuffExecutes" t="Include">
+                <e p="BuffExecuter.cs" t="Include" />
+                <e p="BuffExecuterFactory.cs" t="Include" />
+                <e p="Executer" t="Include">
+                  <e p="AnitEffectExecuter.cs" t="Include" />
+                  <e p="AttrExecuter.cs" t="Include" />
+                  <e p="BuffActionExecuter.cs" t="Include" />
+                </e>
+              </e>
+              <e p="BuffFactory.cs" t="Include" />
+              <e p="BuffFinishTrigger.cs" t="Include" />
+              <e p="BuffManager" t="Include">
+                <e p="BuffManager.ApplyAttachLocal.cs" t="Include" />
+                <e p="BuffManager.cs" t="Include" />
+                <e p="BuffManager.Host.cs" t="Include" />
+                <e p="BuffManager.NetCall.cs" t="Include" />
+                <e p="BuffManager.Replace.cs" t="Include" />
+                <e p="BuffManager.Search.cs" t="Include" />
+              </e>
+              <e p="BuffTrigger" t="Include">
+                <e p="BuffTrigger.cs" t="Include" />
+                <e p="BuffTriggerEvent.cs" t="Include" />
+                <e p="BuffTriggerFactory.cs" t="Include" />
+                <e p="BuffTriggerOnce.cs" t="Include" />
+                <e p="BuffTriggerTimer.cs" t="Include" />
+                <e p="BuffTriggerUpdateTimer.cs" t="Include" />
+                <e p="Trigger" t="Include">
+                  <e p="BuffTriggerAttach.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Carrier.cs" t="Include" />
+              <e p="Perform" t="Include">
+                <e p="BuffPerform.cs" t="Include" />
+                <e p="BuffSoundPerform.cs" t="Include" />
+                <e p="BuffUIPerform.cs" t="Include" />
+                <e p="BuffVFXPerform.cs" t="Include" />
+              </e>
+              <e p="Utility" t="Include">
+                <e p="BuffCarrierUtility.cs" t="Include" />
+                <e p="BuffCondition.cs" t="Include" />
+                <e p="BuffSelectTarget.cs" t="Include" />
+                <e p="BuffSourceUtility.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Entity" t="Include">
+              <e p="Entity.cs" t="Include" />
+              <e p="EntityComponent" t="Include">
+                <e p="EntityComponent.cs" t="Include" />
+                <e p="General" t="Include">
+                  <e p="LinkComponent.cs" t="Include" />
+                </e>
+                <e p="Monster" t="Include">
+                  <e p="LogicStatusComponent.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Hero.cs" t="Include" />
+              <e p="InteractObject.cs" t="Include" />
+              <e p="Monster.cs" t="Include" />
+            </e>
+            <e p="GameController.cs" t="Include" />
+          </e>
+          <e p="Network" t="Include">
+            <e p="Model" t="Include">
+              <e p="BattleModel.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Timer" t="Include">
+            <e p="CycleTimer.cs" t="Include" />
+            <e p="TimeManager.cs" t="Include" />
+            <e p="TimeManager.timer.cs" t="Include" />
+            <e p="Timer.asmdef" t="Include" />
+            <e p="Timer.cs" t="Include" />
+            <e p="UpdateTimer.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Base" t="Include">
+              <e p="BindingResourceAttribute.cs" t="Include" />
+              <e p="CanvasUiBase.cs" t="Include" />
+              <e p="InteractableUiBase.cs" t="Include" />
+              <e p="IUiAnimation.cs" t="Include" />
+              <e p="UiAnimator.cs" t="Include" />
+              <e p="UiBase.cs" t="Include" />
+              <e p="UiManager.cs" t="Include" />
+              <e p="UiManager_Asset.cs" t="Include" />
+              <e p="UiManageStrategy.cs" t="Include" />
+              <e p="WindowUiBase.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Utility" t="Include">
+            <e p="Extension" t="Include">
+              <e p="MethodExtension.cs" t="Include" />
+            </e>
+            <e p="FSM" t="Include">
+              <e p="Fsm.cs" t="Include" />
+              <e p="Machine.cs" t="Include" />
+              <e p="State.cs" t="Include" />
+            </e>
+            <e p="LoadResources.cs" t="Include" />
+            <e p="Pool" t="Include">
+              <e p="PoolObject.cs" t="Include" />
+            </e>
+            <e p="PrintSystem.cs" t="Include" />
+            <e p="Singleton.cs" t="Include" />
+            <e p="UiBase" t="Include">
+              <e p="UiItem.cs" t="Include" />
+            </e>
+            <e p="UiUtility" t="Include">
+              <e p="SekiInfiniteScroll.cs" t="Include" />
+              <e p="SekiInfiniteScrollDragCallBack.cs" t="Include" />
+              <e p="SekiUiItemlistRep.cs" t="Include" />
+            </e>
+            <e p="Utility.asmdef" t="Include" />
+          </e>
+        </e>
+        <e p="UnitTest" t="Include">
+          <e p="Editor" t="Include">
+            <e p="MethodExtensionTest.cs" t="Include" />
+          </e>
+          <e p="PlayModeTest" t="Include">
+            <e p="PlayerHealthTest.cs" t="Include" />
+          </e>
+          <e p="ZForNewUser" t="Include">
+            <e p="StudyTest" t="Include">
+              <e p="PlayerHealth.cs" t="Include" />
+              <e p="PlayerHealthException.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="ZDontPackageResource" t="Include">
+          <e p="Klee" t="Include">
+            <e p="Shader" t="Include">
+              <e p="Unitychan_chara_akarami_blend.shader" t="Include" />
+              <e p="Unitychan_chara_eye.shader" t="Include" />
+              <e p="Unitychan_chara_eye_blend.shader" t="Include" />
+              <e p="Unitychan_chara_eyelash_blend.shader" t="Include" />
+              <e p="Unitychan_chara_fuku.shader" t="Include" />
+              <e p="Unitychan_chara_fuku_ds.shader" t="Include" />
+              <e p="Unitychan_chara_hada.shader" t="Include" />
+              <e p="Unitychan_chara_hada_blend.shader" t="Include" />
+              <e p="Unitychan_chara_hair.shader" t="Include" />
+              <e p="Unitychan_chara_hair_ds.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="ConfigTable.csproj" t="IncludeRecursive" />
+      <e p="Constant.csproj" t="IncludeRecursive" />
+      <e p="Event.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="SeKi.sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Timer.csproj" t="IncludeRecursive" />
+      <e p="Utility.csproj" t="IncludeRecursive" />
+    </e>
+  </component>
+</project>
