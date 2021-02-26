@@ -1,0 +1,479 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: DragonMaskHand
+  m_Mask: 01000000010000000100000001000000010000000000000000000000000000000000000001000000010000000000000000000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: a
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_L
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_L/Arm_Cont_L_end
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_L.001
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_L.001/Arm_Cont_L.001_end
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_L.002
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_L.002/Arm_Cont_L.002_end
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_R
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_R/Arm_Cont_R_end
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_R.001
+    m_Weight: 0
+  - m_Path: a/Arm_Cont_R.001/Arm_Cont_R.001_end
+    m_Weight: 0
+  - m_Path: a/back_food_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_1_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_1_L/back_S_1_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_1_L/back_S_1_L/back_S_2_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_1_L/back_S_1_L/back_S_2_L/back_S_3_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_1_L/back_S_1_L/back_S_2_L/back_S_3_L/back_S_3_L_end
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_2_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_2_L/back_M_1_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_2_L/back_M_1_L/back_M_2_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_2_L/back_M_1_L/back_M_2_L/back_M_3_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_2_L/back_M_1_L/back_M_2_L/back_M_3_L/back_M_3_L_end
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_3_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_3_L/back_Z_1_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_3_L/back_Z_1_L/back_Z_2_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_3_L/back_Z_1_L/back_Z_2_L/back_Z_3_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_3_L/back_Z_1_L/back_Z_2_L/back_Z_3_L/back_Z_3_L_end
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_4_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_4_L/back_D_1_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_4_L/back_D_1_L/back_D_2_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_4_L/back_D_1_L/back_D_2_L/back_D_3_L
+    m_Weight: 0
+  - m_Path: a/back_food_L/back_food_C_4_L/back_D_1_L/back_D_2_L/back_D_3_L/back_D_3_L_end
+    m_Weight: 0
+  - m_Path: a/back_food_L.001
+    m_Weight: 0
+  - m_Path: a/back_food_L.001/Leg_Cont_L
+    m_Weight: 0
+  - m_Path: a/back_food_L.001/Leg_Cont_L/Leg_Cont_L_end
+    m_Weight: 0
+  - m_Path: a/back_food_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_1_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_1_R/back_S_1_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_1_R/back_S_1_R/back_S_2_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_1_R/back_S_1_R/back_S_2_R/back_S_3_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_1_R/back_S_1_R/back_S_2_R/back_S_3_R/back_S_3_R_end
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_2_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_2_R/back_M_1_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_2_R/back_M_1_R/back_M_2_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_2_R/back_M_1_R/back_M_2_R/back_M_3_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_2_R/back_M_1_R/back_M_2_R/back_M_3_R/back_M_3_R_end
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_3_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_3_R/back_Z_1_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_3_R/back_Z_1_R/back_Z_2_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_3_R/back_Z_1_R/back_Z_2_R/back_Z_3_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_3_R/back_Z_1_R/back_Z_2_R/back_Z_3_R/back_Z_3_R_end
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_4_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_4_R/back_D_1_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_4_R/back_D_1_R/back_D_2_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_4_R/back_D_1_R/back_D_2_R/back_D_3_R
+    m_Weight: 0
+  - m_Path: a/back_food_R/back_food_C_4_R/back_D_1_R/back_D_2_R/back_D_3_R/back_D_3_R_end
+    m_Weight: 0
+  - m_Path: a/back_food_R.001
+    m_Weight: 0
+  - m_Path: a/back_food_R.001/Leg_Cont_R
+    m_Weight: 0
+  - m_Path: a/back_food_R.001/Leg_Cont_R/Leg_Cont_R_end
+    m_Weight: 0
+  - m_Path: a/Bone.001
+    m_Weight: 0
+  - m_Path: a/Bone.001/Bone.001_end
+    m_Weight: 0
+  - m_Path: a/Bone.002
+    m_Weight: 0
+  - m_Path: a/Bone.002/Bone.002_end
+    m_Weight: 0
+  - m_Path: a/Bone.004
+    m_Weight: 0
+  - m_Path: a/Bone.004/IK_Target_Kopf.001
+    m_Weight: 0
+  - m_Path: a/Bone.004/IK_Target_Kopf.001/IK_Target_Kopf
+    m_Weight: 0
+  - m_Path: a/Bone.004/IK_Target_Kopf.001/IK_Target_Kopf/IK_Target_Kopf_end
+    m_Weight: 0
+  - m_Path: a/Cont_tail.001
+    m_Weight: 0
+  - m_Path: a/Cont_tail.001/Cont_tail
+    m_Weight: 0
+  - m_Path: a/Cont_tail.001/Cont_tail/Cont_tail_end
+    m_Weight: 0
+  - m_Path: a/Cont_tail.002
+    m_Weight: 0
+  - m_Path: a/Cont_tail.002/Cont_tail.002_end
+    m_Weight: 0
+  - m_Path: a/Hand_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_1_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_1_L/front_S_1_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_1_L/front_S_1_L/front_S_2_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_1_L/front_S_1_L/front_S_2_L/front_S_3_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_1_L/front_S_1_L/front_S_2_L/front_S_3_L/front_S_3_L_end
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_2_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_2_L/front_M_1_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_2_L/front_M_1_L/front_M_2_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_2_L/front_M_1_L/front_M_2_L/front_M_3_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_2_L/front_M_1_L/front_M_2_L/front_M_3_L/front_M_3_L_end
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_3_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_3_L/front_Z_1_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_3_L/front_Z_1_L/front_Z_2_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_3_L/front_Z_1_L/front_Z_2_L/front_Z_3_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_3_L/front_Z_1_L/front_Z_2_L/front_Z_3_L/front_Z_3_L_end
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_4_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_4_L/front_D_1_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_4_L/front_D_1_L/front_D_2_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_4_L/front_D_1_L/front_D_2_L/front_D_3_L
+    m_Weight: 0
+  - m_Path: a/Hand_L/front_food_C_4_L/front_D_1_L/front_D_2_L/front_D_3_L/front_D_3_L_end
+    m_Weight: 0
+  - m_Path: a/Hand_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_1_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_1_R/front_S_1_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_1_R/front_S_1_R/front_S_2_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_1_R/front_S_1_R/front_S_2_R/front_S_3_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_1_R/front_S_1_R/front_S_2_R/front_S_3_R/front_S_3_R_end
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_2_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_2_R/front_M_1_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_2_R/front_M_1_R/front_M_2_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_2_R/front_M_1_R/front_M_2_R/front_M_3_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_2_R/front_M_1_R/front_M_2_R/front_M_3_R/front_M_3_R_end
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_3_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_3_R/front_Z_1_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_3_R/front_Z_1_R/front_Z_2_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_3_R/front_Z_1_R/front_Z_2_R/front_Z_3_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_3_R/front_Z_1_R/front_Z_2_R/front_Z_3_R/front_Z_3_R_end
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_4_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_4_R/front_D_1_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_4_R/front_D_1_R/front_D_2_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_4_R/front_D_1_R/front_D_2_R/front_D_3_R
+    m_Weight: 0
+  - m_Path: a/Hand_R/front_food_C_4_R/front_D_1_R/front_D_2_R/front_D_3_R/front_D_3_R_end
+    m_Weight: 0
+  - m_Path: a/Helper_Bone
+    m_Weight: 0
+  - m_Path: a/Helper_Bone/Helper_Bone_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_L/lowerleg_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_L/lowerleg_L/kneecap_Act_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_L/lowerleg_L/kneecap_Act_L/kneecap_Act_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_L/lowerleg_L/lowerleg_muscle_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_L/lowerleg_L/lowerleg_muscle_L/lowerleg_muscle_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_R/lowerleg_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_R/lowerleg_R/kneecap_Act_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_R/lowerleg_R/kneecap_Act_R/kneecap_Act_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_R/lowerleg_R/lowerleg_muscle_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/Oberschenkel_R/lowerleg_R/lowerleg_muscle_R/lowerleg_muscle_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/ACT_neck_skin
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/ACT_neck_skin/ACT_neck_skin_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augen_Control
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augen_Control/IK_Target_Auge_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augen_Control/IK_Target_Auge_L/IK_Target_Auge_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augen_Control/IK_Target_Auge_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augen_Control/IK_Target_Auge_R/IK_Target_Auge_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenbraue_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenbraue_L/Augenbraue_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenbraue_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenbraue_R/Augenbraue_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_oben_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_oben_L/Augenlid_oben_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_oben_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_oben_R/Augenlid_oben_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_unten_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_unten_L/Augenlid_unten_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_unten_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Augenlid_unten_R/Augenlid_unten_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/Cont_tongue
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/Cont_tongue/Cont_tongue_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/lower_lip
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/lower_lip/lower_lip_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/tongue_2
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/tongue_2/tongue_1
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/tongue_2/tongue_1/ik_tongue
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone/tongue_2/tongue_1/ik_tongue/ik_tongue_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone.003
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone.003/Nase_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone.003/Nase_L/Nase_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone.003/Nase_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/Bone.003/Nase_R/Nase_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/cheek_muscle_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/cheek_muscle_L/cheek_muscle_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/cheek_muscle_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/cheek_muscle_R/cheek_muscle_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/IK_Auge_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/IK_Auge_L/Auge_Lens_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/IK_Auge_L/Auge_Lens_L/Auge_Lens_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/IK_Auge_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/IK_Auge_R/Auge_Lens_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/IK_Auge_R/Auge_Lens_R/Auge_Lens_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/mouth_Cont
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/mouth_Cont/lips_Cont
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/mouth_Cont/lips_Cont/lips_Cont_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/upper_lip
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/ACT_neck_4/ACT_neck_3/ACT_neck_2/ACT_neck_1/head/IK_head/upper_lip/upper_lip_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/paunch.002
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/paunch.002/paunch.002_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/upper_arm_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/upper_arm_L/ik_underarm_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/upper_arm_L/ik_underarm_L/ik_underarm_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/upper_arm_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/upper_arm_R/ik_underarm_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/upper_arm_R/ik_underarm_R/ik_underarm_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w1_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w1_L/w2_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w1_L/w2_L/w3_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w1_L/w2_L/w3_L/w3_L.001
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w1_L/w2_L/w3_L/w3_L.001/w3_L.001_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w4_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w4_L/w5_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w4_L/w5_L/w6_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w4_L/w5_L/w6_L/w6_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w7_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w7_L/w8_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w7_L/w8_L/w9_L
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_L.001/w_C_L/w7_L/w8_L/w9_L/w9_L_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w1_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w1_R/w2_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w1_R/w2_R/w3_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w1_R/w2_R/w3_R/w3_R.001
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w1_R/w2_R/w3_R/w3_R.001/w3_R.001_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w4_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w4_R/w5_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w4_R/w5_R/w6_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w4_R/w5_R/w6_R/w6_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w7_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w7_R/w8_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w7_R/w8_R/w9_R
+    m_Weight: 0
+  - m_Path: a/pelvic_2/pelvic_1/paunch/breast/w_C_R.001/w_C_R/w7_R/w8_R/w9_R/w9_R_end
+    m_Weight: 0
+  - m_Path: a/pelvic_2/tail_1
+    m_Weight: 0
+  - m_Path: a/pelvic_2/tail_1/tail_2
+    m_Weight: 0
+  - m_Path: a/pelvic_2/tail_1/tail_2/tail_3
+    m_Weight: 0
+  - m_Path: a/pelvic_2/tail_1/tail_2/tail_3/ik_ACT_tail_5
+    m_Weight: 0
+  - m_Path: a/pelvic_2/tail_1/tail_2/tail_3/ik_ACT_tail_5/ik_ACT_tail_5_end
+    m_Weight: 0
+  - m_Path: a/root
+    m_Weight: 0
+  - m_Path: a/root/root_end
+    m_Weight: 0
+  - m_Path: Cube
+    m_Weight: 0
+  - m_Path: Sun
+    m_Weight: 0
