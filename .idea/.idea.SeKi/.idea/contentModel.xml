@@ -48,57 +48,6 @@
           </e>
           <e p="OpenSceneTool.cs" t="Include" />
         </e>
-        <e p="Example" t="Include">
-          <e p="Android" t="Include">
-            <e p="AndroidTest.cs" t="Include" />
-          </e>
-          <e p="C#API" t="Include">
-            <e p="DataTimeTest.cs" t="Include" />
-            <e p="NewClassTest.cs" t="Include" />
-            <e p="QuestionMarkTest.cs" t="Include" />
-          </e>
-          <e p="Problem" t="Include">
-            <e p="UIAndSetParentFalse" t="Include">
-              <e p="父物体设置为False的情况下生成子物体，然后对子物体设置大小会失效.txt" t="Include" />
-              <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />
-            </e>
-          </e>
-          <e p="UiUtility" t="Include">
-            <e p="SekiInfiniteScroll" t="Include">
-              <e p="SekiInfiniteScrollTest.cs" t="Include" />
-              <e p="WeaponData.cs" t="Include" />
-              <e p="WeaponUiItem.cs" t="Include" />
-            </e>
-          </e>
-          <e p="UnityAPI" t="Include">
-            <e p="Asset" t="Include">
-              <e p="Editor" t="Include">
-                <e p="AssetBundleBuildTest.cs" t="Include" />
-                <e p="UiAssetInfoEditor.cs" t="Include" />
-              </e>
-            </e>
-            <e p="Audio" t="Include">
-              <e p="UnityAPIMicRecord.cs" t="Include" />
-            </e>
-            <e p="Editor" t="Include">
-              <e p="UnityAPITestDrawGizmo.cs" t="Include" />
-              <e p="UnityAPITestDrawGizmoComponentTest.cs" t="Include" />
-              <e p="UnityAPITestEditorSceneManager.cs" t="Include" />
-              <e p="UnityAPITestEditorWindow.cs" t="Include" />
-              <e p="UnityAPITestInitializeOnLoad.cs" t="Include" />
-              <e p="UnityAPITestMenuItem.cs" t="Include" />
-            </e>
-            <e p="Mono" t="Include">
-              <e p="UnityAPIMonoInvokeTest.cs" t="Include" />
-              <e p="UnityAPIMonoInvokeTestInput.cs" t="Include" />
-            </e>
-            <e p="Time" t="Include">
-              <e p="UnityAPITestTime.cs" t="Include" />
-            </e>
-            <e p="UnityAPITestSample.cs" t="Include" />
-            <e p="UnityAPITestSystemInfo.cs" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="Constant" t="Include">
             <e p="Constant.asmdef" t="Include" />
@@ -243,6 +192,7 @@
           </e>
           <e p="Utility" t="Include">
             <e p="Extension" t="Include">
+              <e p="DataStructureExtension.cs" t="Include" />
               <e p="MethodExtension.cs" t="Include" />
             </e>
             <e p="FSM" t="Include">
@@ -267,11 +217,77 @@
             <e p="Utility.asmdef" t="Include" />
           </e>
         </e>
-        <e p="UnitTest" t="Include">
-          <e p="Editor" t="Include">
-            <e p="MethodExtensionTest.cs" t="Include" />
+        <e p="Study" t="Include">
+          <e p="UiUtility" t="Include">
+            <e p="SekiInfiniteScroll" t="Include">
+              <e p="SekiInfiniteScrollTest.cs" t="Include" />
+              <e p="WeaponData.cs" t="Include" />
+              <e p="WeaponUiItem.cs" t="Include" />
+            </e>
           </e>
+          <e p="UnityAPI" t="Include">
+            <e p="Asset" t="Include">
+              <e p="Editor" t="Include">
+                <e p="AssetBundleBuildTest.cs" t="Include" />
+                <e p="UiAssetInfoEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Audio" t="Include">
+              <e p="UnityAPIMicRecord.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="UnityAPITestDrawGizmo.cs" t="Include" />
+              <e p="UnityAPITestDrawGizmoComponentTest.cs" t="Include" />
+              <e p="UnityAPITestEditorSceneManager.cs" t="Include" />
+              <e p="UnityAPITestEditorWindow.cs" t="Include" />
+              <e p="UnityAPITestInitializeOnLoad.cs" t="Include" />
+              <e p="UnityAPITestMenuItem.cs" t="Include" />
+            </e>
+            <e p="Mono" t="Include">
+              <e p="UnityAPIMonoInvokeTest.cs" t="Include" />
+              <e p="UnityAPIMonoInvokeTestInput.cs" t="Include" />
+            </e>
+            <e p="Time" t="Include">
+              <e p="UnityAPITestTime.cs" t="Include" />
+            </e>
+            <e p="UnityAPITestSample.cs" t="Include" />
+            <e p="UnityAPITestSystemInfo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="TextMesh Pro" t="Include">
+          <e p="Fonts" t="Include">
+            <e p="LiberationSans - OFL.txt" t="Include" />
+          </e>
+          <e p="Resources" t="Include">
+            <e p="LineBreaking Following Characters.txt" t="Include" />
+            <e p="LineBreaking Leading Characters.txt" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="TMP_Bitmap-Custom-Atlas.shader" t="Include" />
+            <e p="TMP_Bitmap-Mobile.shader" t="Include" />
+            <e p="TMP_Bitmap.shader" t="Include" />
+            <e p="TMP_SDF Overlay.shader" t="Include" />
+            <e p="TMP_SDF SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Masking.shader" t="Include" />
+            <e p="TMP_SDF-Mobile Overlay.shader" t="Include" />
+            <e p="TMP_SDF-Mobile SSD.shader" t="Include" />
+            <e p="TMP_SDF-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface-Mobile.shader" t="Include" />
+            <e p="TMP_SDF-Surface.shader" t="Include" />
+            <e p="TMP_SDF.shader" t="Include" />
+            <e p="TMP_Sprite.shader" t="Include" />
+            <e p="TMPro.cginc" t="Include" />
+            <e p="TMPro_Mobile.cginc" t="Include" />
+            <e p="TMPro_Properties.cginc" t="Include" />
+            <e p="TMPro_Surface.cginc" t="Include" />
+          </e>
+          <e p="Sprites" t="Include">
+            <e p="EmojiOne Attribution.txt" t="Include" />
+          </e>
+        </e>
+        <e p="UnitTest" t="Include">
           <e p="PlayModeTest" t="Include">
+            <e p="MethodExtensionTest.cs" t="Include" />
             <e p="PlayerHealthTest.cs" t="Include" />
           </e>
           <e p="ZForNewUser" t="Include">
@@ -280,6 +296,23 @@
               <e p="PlayerHealthException.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="ZDemand" t="Include">
+          <e p="1.ScreenShotSavePng" t="Include">
+            <e p="CaptureScreenShotUtility.cs" t="Include" />
+            <e p="TestCaptureScreenShotUtility.cs" t="Include" />
+          </e>
+          <e p="2.AndroidUnityInteract" t="Include">
+            <e p="AndroidTest.cs" t="Include" />
+          </e>
+          <e p="3.SizeFitterUnderParentFalse" t="Include">
+            <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />
+          </e>
+          <e p="4.FreeSelectFolder" t="Include">
+            <e p="FreeSelectFolder.cs" t="Include" />
+            <e p="TestFreeSelectFolder.cs" t="Include" />
+          </e>
+          <e p="目录.txt" t="Include" />
         </e>
         <e p="ZDontPackageResource" t="Include">
           <e p="Klee" t="Include">
