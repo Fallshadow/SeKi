@@ -40,6 +40,40 @@
             <e p="目前是虚拟的配置表，日后完善请删除该文档.txt" t="Include" />
           </e>
         </e>
+        <e p="Demigiant" t="Include">
+          <e p="DemiLib" t="Include">
+            <e p="Core" t="Include">
+              <e p="DemiLib.xml" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="DemiEditor.xml" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="DOTween" t="Include">
+            <e p="Modules" t="Include">
+              <e p="DOTweenModuleAudio.cs" t="Include" />
+              <e p="DOTweenModulePhysics.cs" t="Include" />
+              <e p="DOTweenModulePhysics2D.cs" t="Include" />
+              <e p="DOTweenModuleSprite.cs" t="Include" />
+              <e p="DOTweenModuleUI.cs" t="Include" />
+              <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+              <e p="DOTweenModuleUtils.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="DOTweenPro" t="Include">
+            <e p="DOTweenAnimation.cs" t="Include" />
+            <e p="DOTweenProShortcuts.cs" t="Include" />
+            <e p="DOTweenTextMeshPro.cs" t="Include" />
+            <e p="DOTweenTk2d.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="DOTweenAnimationInspector.cs" t="Include" />
+              <e p="DOTweenPreviewManager.cs" t="Include" />
+            </e>
+            <e p="readme.txt" t="Include" />
+          </e>
+          <e p="readme_DOTweenPro.txt" t="Include" />
+        </e>
         <e p="Editor" t="Include">
           <e p="Game" t="Include">
             <e p="Buff" t="Include">
@@ -49,6 +83,10 @@
           <e p="OpenSceneTool.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="AvatarSystem" t="Include">
+            <e p="CinemachineController_LookAround.cs" t="Include" />
+            <e p="CinemachineController_Test.cs" t="Include" />
+          </e>
           <e p="Constant" t="Include">
             <e p="Constant.asmdef" t="Include" />
             <e p="Setting" t="Include">
@@ -188,6 +226,9 @@
               <e p="UiManager_Asset.cs" t="Include" />
               <e p="UiManageStrategy.cs" t="Include" />
               <e p="WindowUiBase.cs" t="Include" />
+            </e>
+            <e p="CharacterCustomization" t="Include">
+              <e p="CinemachineController_InputCheckArea.cs" t="Include" />
             </e>
           </e>
           <e p="Utility" t="Include">
@@ -354,6 +395,15 @@
           </e>
           <e p="5.NoConsumeString" t="Include">
             <e p="TestNoConsumeString.cs" t="Include" />
+          </e>
+          <e p="6.RenderWithTransparentBackGround" t="Include">
+            <e p="CamerCaptureWithTransparentBackGround.cs" t="Include" />
+          </e>
+          <e p="7.TransparentPNGByCamera" t="Include">
+            <e p="TransparentPNGByCamera.cs" t="Include" />
+          </e>
+          <e p="8.ScreenResolution" t="Include">
+            <e p="TestScreenResolution.cs" t="Include" />
           </e>
           <e p="目录.txt" t="Include" />
         </e>

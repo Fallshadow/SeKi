@@ -4,42 +4,47 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Android;
 
-public class AndroidTest : MonoBehaviour
+namespace ASeKi.Demand
 {
+    public class AndroidTest : MonoBehaviour
+    {
 
-    AndroidJavaClass unity;
-    AndroidJavaObject currentActivity;
-    AndroidJavaClass phoneInfoMgr;
-    public Text wifi;
-    public Button request;
-    public Button call;
-    private void Awake()
-    {
-        Initialize();
-    }
-    private void Start()
-    {
+        AndroidJavaClass unity;
+        AndroidJavaObject currentActivity;
+        AndroidJavaClass phoneInfoMgr;
+        public Text wifi;
+        public Button request;
+        public Button call;
+
+        private void Awake()
+        {
+            Initialize();
+        }
+
+        private void Start()
+        {
 #if UNITY_ANDROID && !UNITY_EDITOR_WIN
         request.onClick.AddListener(CallPhoneRequest);
         call.onClick.AddListener(CallPhone);
 #endif
-    }
-    private void Update()
-    {
+        }
+
+        private void Update()
+        {
 #if UNITY_ANDROID && !UNITY_EDITOR_WIN
         // wifi.text = GetWifi().ToString();        
 #endif
-    }
+        }
 
-    public void Initialize()
-    {
+        public void Initialize()
+        {
 #if UNITY_ANDROID && !UNITY_EDITOR_WIN
             unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
             currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
             phoneInfoMgr = new AndroidJavaClass("com.example.phoneinfohelper.PhoneInfoMgr");
             phoneInfoMgr.CallStatic("Init", currentActivity);
 #endif
-    }
+        }
 
 #if UNITY_ANDROID && !UNITY_EDITOR_WIN
         public float GetSignal()
@@ -65,4 +70,5 @@ public class AndroidTest : MonoBehaviour
             phoneInfoMgr.CallStatic("CallPhone", "18846047017");
         }
 #endif
+    }
 }

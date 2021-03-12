@@ -2,28 +2,32 @@
 using System.Text;
 using UnityEngine;
 
-public class TestNoConsumeString : MonoBehaviour
+namespace ASeKi.Demand
 {
-    public string TestStr = "";
-
-    public byte[] bytes = new Byte[8];
-    // Update is called once per frame
-    void Update()
+    public class TestNoConsumeString : MonoBehaviour
     {
-        if (Input.GetKey(KeyCode.Space))
+        public string TestStr = "";
+
+        public byte[] bytes = new Byte[8];
+
+        // Update is called once per frame
+        void Update()
         {
-            TestStr = "我去";
-        }
-        
-        if (Input.GetKey(KeyCode.B))
-        {
-            string newString = "我去";
-            newString = "哈哈";
-        }
-        
-        if (Input.GetKey(KeyCode.A))
-        {
-            TestStr = Encoding.UTF8.GetString(bytes);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                TestStr = "我去";
+            }
+
+            if (Input.GetKey(KeyCode.B))
+            {
+                string newString = "我去";
+                newString = "哈哈";
+            }
+
+            if (Input.GetKey(KeyCode.A))
+            {
+                TestStr = Encoding.UTF8.GetString(bytes);
+            }
         }
     }
 }
