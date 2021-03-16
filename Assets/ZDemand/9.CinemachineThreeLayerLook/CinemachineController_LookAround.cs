@@ -71,9 +71,9 @@ namespace ASeKi.Demand
             evt.EventManager.instance.Register<bool>(evt.EventGroup.CAMERA, (short)evt.CameraEvent.THREE_LAYER_LOOK_CINE, CheckMouse);
             StartCoroutine("enableCinemachine");
             // TODO： 这是初始化相机位置
-            SetFreeLookCameraPos(1,2);
+            SetFreeLookCameraPos(1,0);
             SetFreeLookCameraPos(2,1);
-            SetFreeLookCameraPos(3,0);
+            SetFreeLookCameraPos(3,2);
         }
         
         void OnDestroy()
@@ -401,9 +401,9 @@ namespace ASeKi.Demand
 
         private void initData()
         {
-            CameraID_PosID.Add(1,2);   
+            CameraID_PosID.Add(1,0);   
             CameraID_PosID.Add(2,1);   
-            CameraID_PosID.Add(3,0);   
+            CameraID_PosID.Add(3,2);   
         }
 
         // 应用角度限制

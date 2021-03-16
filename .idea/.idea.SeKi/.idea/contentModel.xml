@@ -83,10 +83,6 @@
           <e p="OpenSceneTool.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="AvatarSystem" t="Include">
-            <e p="CinemachineController_LookAround.cs" t="Include" />
-            <e p="CinemachineController_Test.cs" t="Include" />
-          </e>
           <e p="Constant" t="Include">
             <e p="Constant.asmdef" t="Include" />
             <e p="Setting" t="Include">
@@ -226,9 +222,6 @@
               <e p="UiManager_Asset.cs" t="Include" />
               <e p="UiManageStrategy.cs" t="Include" />
               <e p="WindowUiBase.cs" t="Include" />
-            </e>
-            <e p="CharacterCustomization" t="Include">
-              <e p="CinemachineController_InputCheckArea.cs" t="Include" />
             </e>
           </e>
           <e p="Utility" t="Include">
@@ -383,15 +376,14 @@
             <e p="CaptureScreenShotUtility.cs" t="Include" />
             <e p="TestCaptureScreenShotUtility.cs" t="Include" />
           </e>
+          <e p="10.GameCameraControlLikeScene" t="Include">
+            <e p="GameCameraControlLikeScene.cs" t="Include" />
+          </e>
           <e p="2.AndroidUnityInteract" t="Include">
             <e p="AndroidTest.cs" t="Include" />
           </e>
           <e p="3.SizeFitterUnderParentFalse" t="Include">
             <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />
-          </e>
-          <e p="4.FreeSelectFolder" t="Include">
-            <e p="FreeSelectFolder.cs" t="Include" />
-            <e p="TestFreeSelectFolder.cs" t="Include" />
           </e>
           <e p="5.NoConsumeString" t="Include">
             <e p="TestNoConsumeString.cs" t="Include" />
@@ -400,10 +392,16 @@
             <e p="CamerCaptureWithTransparentBackGround.cs" t="Include" />
           </e>
           <e p="7.TransparentPNGByCamera" t="Include">
-            <e p="TransparentPNGByCamera.cs" t="Include" />
+            <e p="CaptureScreenUtility.cs" t="Include" />
+            <e p="TestCaptureScreenUtility.cs" t="Include" />
           </e>
           <e p="8.ScreenResolution" t="Include">
             <e p="TestScreenResolution.cs" t="Include" />
+          </e>
+          <e p="9.CinemachineThreeLayerLook" t="Include">
+            <e p="CinemachineController_InputCheckArea.cs" t="Include" />
+            <e p="CinemachineController_LookAround.cs" t="Include" />
+            <e p="CinemachineController_Test.cs" t="Include" />
           </e>
           <e p="目录.txt" t="Include" />
         </e>

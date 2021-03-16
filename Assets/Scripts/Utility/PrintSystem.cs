@@ -18,6 +18,12 @@ namespace ASeKi.debug
             sunshuchao = 1 << 1,
             none = 1 << 2,
         }
+        
+        [System.Diagnostics.Conditional("SeKiDebug")]
+        public static void LogWithoutWriter(string str)
+        {
+            Debug.Log($"{str}");
+        }
 
         [System.Diagnostics.Conditional("SeKiDebug")]
         public static void Log(string str, PrintBy pb = PrintBy.none)
