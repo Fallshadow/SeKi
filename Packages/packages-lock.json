@@ -81,7 +81,7 @@
       }
     },
     "com.unity.ui.builder": {
-      "version": "1.0.0-preview.7",
+      "version": "1.0.0-preview.13",
       "depth": 0,
       "source": "registry",
       "dependencies": {},
