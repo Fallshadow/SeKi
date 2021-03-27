@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿#if UNITY_EDITOR
+using System.Collections.Generic;
 using UnityEditor;
 using System.IO;
 using UnityEngine;
@@ -89,3 +90,4 @@ namespace ASeKi.AssetBundleCore
         }
     }
 }
+#endif

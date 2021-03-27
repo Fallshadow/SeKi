@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
+    <e p="C:\Users\wwwsu\.Rider2019.2\config\scratches" t="IncludeRecursive" />
     <e p="C:\Users\wwwsu\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\wwwsu\.Rider2019.2\system\resharper-host\Local\Transient\ReSharperHost\v192\SolutionCaches\_SeKi.-38938868.00" t="ExcludeRecursive" />
     <e p="F:\SeKi\SeKi" t="IncludeRecursive">
@@ -26,6 +27,20 @@
               <e p="ResourceLoaderProxy.cs" t="Include" />
             </e>
             <e p="ResourceLoaderLauncher.cs" t="Include" />
+          </e>
+          <e p="UnityResolutionDialog-master" t="Include">
+            <e p="NewResolutionDialogAssembly.asmdef" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="Controller" t="Include">
+                <e p="ButtonHandler.cs" t="Include" />
+                <e p="CreateEventSystemIfNoneExists.cs" t="Include" />
+                <e p="FpsLabel.cs" t="Include" />
+                <e p="GraphicSettingsHandler.cs" t="Include" />
+                <e p="PopupHandler.cs" t="Include" />
+              </e>
+              <e p="DefaultInputsHandler.cs" t="Include" />
+              <e p="Settings.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="ConfigTable" t="Include">
@@ -79,6 +94,9 @@
             <e p="Buff" t="Include">
               <e p="BuffDebugEditor.cs" t="Include" />
             </e>
+            <e p="CCFreeLook" t="Include">
+              <e p="CCFreeLookEditor.cs" t="Include" />
+            </e>
           </e>
           <e p="OpenSceneTool.cs" t="Include" />
         </e>
@@ -93,6 +111,11 @@
                   <e p="BuffConflictType.cs" t="Include" />
                   <e p="BuffEffectType.cs" t="Include" />
                   <e p="BuffFinishType.cs" t="Include" />
+                </e>
+                <e p="CCFreeLook" t="Include">
+                  <e p="CCFreeLookFashionCameraPoint.cs" t="Include" />
+                  <e p="CCFreeLookPetCameraPoint.cs" t="Include" />
+                  <e p="CCFreeLookScene.cs" t="Include" />
                 </e>
               </e>
               <e p="ResourcesPathSetting.cs" t="Include" />
@@ -201,6 +224,9 @@
             <e p="Model" t="Include">
               <e p="BattleModel.cs" t="Include" />
             </e>
+          </e>
+          <e p="ScriptableObject" t="Include">
+            <e p="CCFreeLookCameraPointConfigSO.cs" t="Include" />
           </e>
           <e p="Timer" t="Include">
             <e p="CycleTimer.cs" t="Include" />
@@ -372,10 +398,6 @@
           </e>
         </e>
         <e p="ZDemand" t="Include">
-          <e p="1.ScreenShotSavePng" t="Include">
-            <e p="CaptureScreenShotUtility.cs" t="Include" />
-            <e p="TestCaptureScreenShotUtility.cs" t="Include" />
-          </e>
           <e p="10.GameCameraControlLikeScene" t="Include">
             <e p="GameCameraControlLikeScene.cs" t="Include" />
           </e>
@@ -399,8 +421,8 @@
             <e p="TestScreenResolution.cs" t="Include" />
           </e>
           <e p="9.CinemachineThreeLayerLook" t="Include">
-            <e p="CinemachineController_InputCheckArea.cs" t="Include" />
-            <e p="CinemachineController_LookAround.cs" t="Include" />
+            <e p="CCFreeLook.cs" t="Include" />
+            <e p="CCFreeLookInputCheckArea.cs" t="Include" />
             <e p="CinemachineController_Test.cs" t="Include" />
           </e>
           <e p="目录.txt" t="Include" />
@@ -425,6 +447,7 @@
       <e p="ConfigTable.csproj" t="IncludeRecursive" />
       <e p="Constant.csproj" t="IncludeRecursive" />
       <e p="Event.csproj" t="IncludeRecursive" />
+      <e p="NewResolutionDialog.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SeKi.sln" t="IncludeFlat" />

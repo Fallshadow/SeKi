@@ -8,7 +8,10 @@ namespace ASeKi.AssetBundleCore
     public class ResourceLoaderProxy : Singleton<ResourceLoaderProxy>
     {
         ResourceLoaderManager manager;
+#if DEBUG_RESOURCE
         FastModeLoaderManager fastModeManager;
+#endif
+       
 
         public bool IsOK
         {
@@ -41,7 +44,9 @@ namespace ASeKi.AssetBundleCore
             }
             else
             {
+#if UNITY_EDITOR && DEBUG_RESOURCE
                 manager = obj.AddComponent<FastModeLoaderManager>();
+#endif
             }
 
             Object.DontDestroyOnLoad(obj);

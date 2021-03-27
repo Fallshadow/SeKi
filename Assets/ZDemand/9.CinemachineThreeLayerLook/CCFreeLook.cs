@@ -1,24 +1,23 @@
 ﻿using System.Collections;
 using System;
-using System.Collections.Generic;
+using ASeKi.Extension;
 using UnityEngine;
 using Cinemachine;
 using DG.Tweening;
-using UnityEngine.Rendering;
 
 namespace ASeKi.Demand
 {
     [Serializable]
     public sealed class CameraID_PosID_Dictionary : SerializedDictionary<int,int> {}
     
-    public class CinemachineController_LookAround : MonoBehaviour
+    public class CCFreeLook : MonoBehaviour
     {
         [SerializeField] private CinemachineBrain mainCamera = null;
         [SerializeField] private CinemachineMixingCamera mixingCamera = null;
-        [SerializeField] private Transform[] allfreeLookLookAtTran = null;
         [SerializeField] private CinemachineFreeLook[] freeLookGroup = new CinemachineFreeLook[maxCameraNum];
-        [SerializeField] private CinemachineFreeLook[] allfreeLookGroup = null;
         [SerializeField] private GameObject[] followObjsY;
+        private Transform[] allfreeLookLookAtTran = null;
+        private CinemachineFreeLook[] allfreeLookGroup = null;
         private Vector3 cameraRotation;
 
         [Header("编辑器参数设置")]
@@ -51,6 +50,9 @@ namespace ASeKi.Demand
         // 位置从0开始 0,1,2 相机ID从1开始 1,2,3
         [SerializeField] public CameraID_PosID_Dictionary CameraID_PosID = new CameraID_PosID_Dictionary();
         
+        [Header("权重忍受范围")]
+        [SerializeField] private float toleRange = 0.01f;
+        
         private float timer = 0;
         private Tween tweener = null;
         private bool mouseDown = false;
@@ -81,9 +83,18 @@ namespace ASeKi.Demand
             evt.EventManager.instance.Unregister<bool>(evt.EventGroup.CAMERA, (short)evt.CameraEvent.THREE_LAYER_LOOK_CINE, CheckMouse);
             CancelInvoke("delayApply");
         }
+
+        public void ResetFreeLookSize(int count)
+        {
+            if (freeLookGroup.Length < count)
+            {
+                
+            }
+        }
+        
         
         // 将X号相机安排在X号位置上
-        public void SetFreeLookCameraPos(int cccameraID, int cameraPos)
+        public void SetFreeLookCameraPos(int cameraId, int cameraPos)
         {
             if(mixingCamera == null)
             {
@@ -93,15 +104,15 @@ namespace ASeKi.Demand
             {
                 Destroy(freeLookGroup[cameraPos].gameObject);
             }
-            freeLookGroup[cameraPos] = Instantiate(allfreeLookGroup[cccameraID - 1], mixingCamera.transform);
+            freeLookGroup[cameraPos] = Instantiate(allfreeLookGroup[cameraId], mixingCamera.transform);
             freeLookGroup[cameraPos].gameObject.SetActive(true);
         }
         
         // 切换到XID的相机
-        public void SetMainCineCamera(int cameraID)
+        public void ChangeToXIdCamera(int cameraId,Action callBack = null)
         {
             SetAllFreeLookGroupNegative();
-            allfreeLookGroup[cameraID - 1].Priority = activePriority;
+            allfreeLookGroup[cameraId].Priority = activePriority;
             if(tweener != null)
             {
                 tweener.Kill();
@@ -109,12 +120,19 @@ namespace ASeKi.Demand
             tweener = DOTween.To(() => timer, x => timer = x, 1, durTime).OnComplete(
                 () =>
                 {
-                    setFreeLookGroupItemByID(cameraID);
-                    allfreeLookGroup[cameraID - 1].Priority = negativePriority;
-                    applyFreeLookCineMachine = freeLookGroup[CameraID_PosID[cameraID]];
+                    setFreeLookGroupItemByID(cameraId);
+                    allfreeLookGroup[cameraId].Priority = negativePriority;
+                    applyFreeLookCineMachine = freeLookGroup[CameraID_PosID[cameraId]];
+                    callBack?.Invoke();
                     Invoke("delayApply", Time.deltaTime);
                 }
             );
+        }
+
+        // 切换到X位置的相机
+        public void ChangeToXPosCamera(int posID,Action callBack = null)
+        {
+            
         }
         
         #region 切换到某个位置下的相机位置
@@ -302,7 +320,7 @@ namespace ASeKi.Demand
             for(int cIndex = 0; cIndex < freeLookGroup.Length; cIndex++)
             {
                 float weight = mixingCamera.GetWeight(freeLookGroup[cIndex]);
-                if(weight == 1)
+                if(Math.Abs(weight - 1) < toleRange)
                 {
                     if(value > 0)
                     {
@@ -328,7 +346,7 @@ namespace ASeKi.Demand
                     }
                     return;
                 }
-                if(weight != 0)
+                if(Math.Abs(weight) > toleRange)
                 {
                     float distance = Vector3.Distance(freeLookGroup[cIndex + 1].transform.position, freeLookGroup[cIndex].transform.position);
                     mixingCamera.SetWeight(freeLookGroup[cIndex], Mathf.Clamp01(weight - value / distance));
@@ -401,9 +419,9 @@ namespace ASeKi.Demand
 
         private void initData()
         {
-            CameraID_PosID.Add(1,0);   
-            CameraID_PosID.Add(2,1);   
-            CameraID_PosID.Add(3,2);   
+            CameraID_PosID.Add(0,0);   
+            CameraID_PosID.Add(1,1);   
+            CameraID_PosID.Add(2,2);   
         }
 
         // 应用角度限制

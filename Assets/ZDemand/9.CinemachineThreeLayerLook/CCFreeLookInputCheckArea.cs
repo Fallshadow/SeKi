@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 
 namespace ASeKi.Demand
 {
-    public class CinemachineController_InputCheckArea : MonoBehaviour, IPointerDownHandler,IPointerUpHandler
+    public class CCFreeLookInputCheckArea : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         public void OnPointerDown(PointerEventData eventData)
         {
@@ -15,18 +15,6 @@ namespace ASeKi.Demand
         public void OnPointerUp(PointerEventData eventData)
         {
             evt.EventManager.instance.Send<bool>(evt.EventGroup.CAMERA, (short)evt.CameraEvent.THREE_LAYER_LOOK_CINE, false);
-        }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
         }
     }
 
