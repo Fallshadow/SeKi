@@ -100,7 +100,8 @@
           </e>
           <e p="OpenSceneTool.cs" t="Include" />
           <e p="Utility" t="Include">
-            <e p="SearchEditorIcon.cs" t="Include" />
+            <e p="BuiltInResourcesWindow.cs" t="Include" />
+            <e p="BuiltInResourcesWindow_2_Editor.cs" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -254,6 +255,7 @@
             </e>
           </e>
           <e p="Utility" t="Include">
+            <e p="BuiltInResourcesWindow_2_Mono.cs" t="Include" />
             <e p="Extension" t="Include">
               <e p="DataStructureExtension.cs" t="Include" />
               <e p="MethodExtension.cs" t="Include" />
