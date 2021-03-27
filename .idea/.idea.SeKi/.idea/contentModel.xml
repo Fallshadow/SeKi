@@ -99,6 +99,9 @@
             </e>
           </e>
           <e p="OpenSceneTool.cs" t="Include" />
+          <e p="Utility" t="Include">
+            <e p="SearchEditorIcon.cs" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="Constant" t="Include">
