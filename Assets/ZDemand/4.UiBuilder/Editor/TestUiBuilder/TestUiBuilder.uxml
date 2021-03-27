@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Main-Window" style="flex-direction: row; width: 100%; height: 100%;">
+        <Style src="/Assets/Editor/Utility/UiBuilder/CommonUSS.uss" />
+        <ui:VisualElement name="left-filter" style="height: 100%; width: 30%;">
+            <ui:Button text="Button" class="BlueBtn" />
+            <ui:Button text="Button" class="YellowBtn" />
+        </ui:VisualElement>
+        <ui:VisualElement name="middle-window" class="middle" style="width: 40%; height: 100%;" />
+        <ui:VisualElement name="right-filter" style="width: 30%; height: 100%;" />
+    </ui:VisualElement>
+</ui:UXML>

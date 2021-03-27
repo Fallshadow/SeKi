@@ -1,7 +1,7 @@
-1：空闲
+1：Playable简介
 2：安卓unity交互
 3：自动适应大小为什么失效
-4：空闲
+4：UIBUILDER简介
 5：无消耗的string 常量池
 6：camera导出透明的图片_使用黑白两色相机
 7：camera导出透明的图片_直接使用texture argb32 外加导出PNG

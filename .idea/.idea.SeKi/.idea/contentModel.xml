@@ -102,6 +102,9 @@
           <e p="Utility" t="Include">
             <e p="BuiltInResourcesWindow.cs" t="Include" />
             <e p="BuiltInResourcesWindow_2_Editor.cs" t="Include" />
+            <e p="UiBuilder" t="Include">
+              <e p="CommonUSS.uss" t="Include" />
+            </e>
           </e>
         </e>
         <e p="Scripts" t="Include">
@@ -411,6 +414,15 @@
           </e>
           <e p="3.SizeFitterUnderParentFalse" t="Include">
             <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />
+          </e>
+          <e p="4.UiBuilder" t="Include">
+            <e p="Editor" t="Include">
+              <e p="TestUiBuilder" t="Include">
+                <e p="TestUiBuilder.cs" t="Include" />
+                <e p="TestUiBuilder.uxml" t="Include" />
+                <e p="TestUiBuilderUSS.uss" t="Include" />
+              </e>
+            </e>
           </e>
           <e p="5.NoConsumeString" t="Include">
             <e p="TestNoConsumeString.cs" t="Include" />
