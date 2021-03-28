@@ -1,4 +1,4 @@
-namespace constants
+namespace CCameraUtility
 {
     public enum CCFreeLookFashionCameraPoint : int
     {

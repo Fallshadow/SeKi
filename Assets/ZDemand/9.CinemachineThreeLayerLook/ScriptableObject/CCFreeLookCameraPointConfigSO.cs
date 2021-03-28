@@ -4,15 +4,20 @@ using ASeKi.Extension;
 using constants;
 using UnityEngine;
 
-namespace ASeKi.data
+namespace CCameraUtility
 {
     [Serializable]
     public class CCFreeLookCameraPos
     {
         public CCFreeLookScene ownScene = CCFreeLookScene.FashionScene;
-        public string Name = "";
         public int CameraIndex = 0;
         public int PosId = 0;
+
+        public CCFreeLookCameraPos(CCFreeLookScene scene,int cameraIndex)
+        {
+            ownScene = scene;
+            this.CameraIndex = cameraIndex;
+        }
     }
 
     [CreateAssetMenu(fileName = "CCFreeLookCameraPointConfigSO", menuName = "CCFreeLookCameraPointConfigSO")]

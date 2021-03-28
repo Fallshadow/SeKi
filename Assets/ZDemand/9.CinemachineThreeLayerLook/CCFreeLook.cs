@@ -91,8 +91,7 @@ namespace ASeKi.Demand
                 
             }
         }
-        
-        
+
         // 将X号相机安排在X号位置上
         public void SetFreeLookCameraPos(int cameraId, int cameraPos)
         {

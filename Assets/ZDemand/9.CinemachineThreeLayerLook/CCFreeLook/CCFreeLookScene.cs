@@ -1,6 +1,6 @@
 using System.ComponentModel;
 
-namespace constants
+namespace CCameraUtility
 {
     public enum CCFreeLookScene : byte
     {

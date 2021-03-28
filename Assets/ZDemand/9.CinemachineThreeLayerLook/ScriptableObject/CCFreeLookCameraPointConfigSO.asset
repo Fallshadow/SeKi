@@ -13,9 +13,5 @@ MonoBehaviour:
   m_Name: CCFreeLookCameraPointConfigSO
   m_EditorClassIdentifier: 
   curScene: 0
-  dictCCFashionFreeLook:
-    m_Keys: 00000000
-    m_Values: 00000000
-  dictCCPetFreeLook:
-    m_Keys: 
-    m_Values: 
+  ccFashionFreeLook: []
+  ccPetFreeLook: []
