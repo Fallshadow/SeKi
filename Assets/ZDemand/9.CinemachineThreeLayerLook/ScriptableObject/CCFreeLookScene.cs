@@ -4,7 +4,7 @@ namespace CCameraUtility
 {
     public enum CCFreeLookScene : byte
     {
-        FashionScene,
+        FashionScene = 0,
         PetScene
     }
 }

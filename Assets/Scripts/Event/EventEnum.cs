@@ -30,6 +30,7 @@
     public enum CameraEvent : short
     {
         THREE_LAYER_LOOK_CINE,
+        THREE_LAYER_CUT_SCENE,
     }
 
     public enum BuffEvent : short

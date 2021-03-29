@@ -2,9 +2,9 @@ namespace CCameraUtility
 {
     public enum CCFreeLookCameraLayer : byte
     {
-        Layer1 = 0,
+        Layer0 = 0,
+        Layer1,
         Layer2,
-        Layer3,
-        Layer4
+        Layer3
     }
 }

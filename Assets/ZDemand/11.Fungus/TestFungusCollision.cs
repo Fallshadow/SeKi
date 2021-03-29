@@ -10,7 +10,7 @@ public class TestFungusCollision : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        MyFlowchart.GetVariable("Var1") = GetComponent<Collision>();
+        
     }
 
     // Update is called once per frame

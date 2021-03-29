@@ -4,6 +4,7 @@ namespace CCameraUtility
     {
         FASHION_HEAD,
         FASHION_BODY,
-        FASHION_HAND
+        FASHION_HAND,
+        FASHION_LEG
     }
 }

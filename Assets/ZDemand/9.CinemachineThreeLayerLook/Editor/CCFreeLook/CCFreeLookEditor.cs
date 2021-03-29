@@ -50,12 +50,15 @@ namespace CCameraUtility
                         configSO.ccFashionFreeLook[index].PosId = (int)(CCFreeLookCameraLayer)EditorGUILayout.EnumPopup((CCFreeLookCameraLayer)configSO.ccFashionFreeLook[index].PosId, GUILayout.Width(120));
                         EditorGUILayout.EndHorizontal();
                     }
-
                     // LayoutAddAndDelButton(
                     //     () => { configSO.ccFashionFreeLook.Add(new CCFreeLookCameraPos(CCFreeLookScene.FashionScene,configSO.ccFashionFreeLook.Count)); },
                     //     () => { configSO.ccFashionFreeLook.RemoveAt(configSO.ccFashionFreeLook.Count -1);}
                     // );
-                    
+                    if (GUILayout.Button(new GUIContent("Reset")))
+                    {
+                        configSO.ccFashionFreeLook.Clear();
+                        OnEnable();
+                    }
                     break;
                 case CCFreeLookScene.PetScene:
                     for (int index = 0; index < configSO.ccPetFreeLook.Count; index++)
@@ -66,16 +69,20 @@ namespace CCameraUtility
                         configSO.ccPetFreeLook[index].PosId = (int)(CCFreeLookCameraLayer)EditorGUILayout.EnumPopup((CCFreeLookCameraLayer)configSO.ccPetFreeLook[index].PosId, GUILayout.Width(120));
                         EditorGUILayout.EndHorizontal();
                     }
+                    if (GUILayout.Button(new GUIContent("Reset")))
+                    {
+                        configSO.ccPetFreeLook.Clear();
+                        OnEnable();
+                    }
                     break;
             }
-
-            
-            if (GUILayout.Button(EditorGUIUtility.FindTexture("d_Toolbar Plus"), new[] {GUILayout.Width(20), GUILayout.Height(20)}))
-            {
-                configSO.ccFashionFreeLook.Clear();
-                configSO.ccPetFreeLook.Clear();
-            }
             EditorGUILayout.EndVertical();
+            while(configSO.ccSceneMaxLayer.Count <= (int) configSO.curScene)
+            {
+                configSO.ccSceneMaxLayer.Add(0);
+            }
+            configSO.ccSceneMaxLayer[(int) configSO.curScene] = EditorGUILayout.IntField(new GUIContent("当前场景应用的层数"), configSO.ccSceneMaxLayer[(int) configSO.curScene]);
+            
         }
         // private void LayoutAddAndDelButton(Action add,Action del)
         // {

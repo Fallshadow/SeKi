@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_SeKi.-38938868.00" t="ExcludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\system\resharper-host\Local\Transient\ReSharperHost\v192\SolutionCaches\_SeKi.-38938868.00" t="ExcludeRecursive" />
     <e p="F:\SeKi\SeKi" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -1460,18 +1461,20 @@
             <e p="TestScreenResolution.cs" t="Include" />
           </e>
           <e p="9.CinemachineThreeLayerLook" t="Include">
-            <e p="CCFreeLook" t="Include">
-              <e p="CCFreeLookCameraLayer.cs" t="Include" />
-              <e p="CCFreeLookEditor.cs" t="Include" />
-              <e p="CCFreeLookFashionCameraPoint.cs" t="Include" />
-              <e p="CCFreeLookPetCameraPoint.cs" t="Include" />
-              <e p="CCFreeLookScene.cs" t="Include" />
-            </e>
             <e p="CCFreeLook.cs" t="Include" />
             <e p="CCFreeLookInputCheckArea.cs" t="Include" />
             <e p="CinemachineController_Test.cs" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="CCFreeLook" t="Include">
+                <e p="CCFreeLookEditor.cs" t="Include" />
+              </e>
+            </e>
             <e p="ScriptableObject" t="Include">
+              <e p="CCFreeLookCameraLayer.cs" t="Include" />
               <e p="CCFreeLookCameraPointConfigSO.cs" t="Include" />
+              <e p="CCFreeLookFashionCameraPoint.cs" t="Include" />
+              <e p="CCFreeLookPetCameraPoint.cs" t="Include" />
+              <e p="CCFreeLookScene.cs" t="Include" />
             </e>
           </e>
           <e p="目录.txt" t="Include" />

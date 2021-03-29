@@ -26,6 +26,19 @@ namespace CCameraUtility
         public CCFreeLookScene curScene = CCFreeLookScene.FashionScene;
         public List<CCFreeLookCameraPos> ccFashionFreeLook = new List<CCFreeLookCameraPos>();
         public List<CCFreeLookCameraPos> ccPetFreeLook = new List<CCFreeLookCameraPos>();
+        public List<int> ccSceneMaxLayer = new List<int>();
+
+        public List<CCFreeLookCameraPos> GetCCFreeLookCameraPosDatas(CCFreeLookScene scene)
+        {
+            switch (curScene)
+            {
+                case CCFreeLookScene.FashionScene:
+                    return ccFashionFreeLook;
+                case CCFreeLookScene.PetScene:
+                    return ccPetFreeLook;
+            }
+            return null;
+        }
     }
 }
 
