@@ -28,6 +28,12 @@
             </e>
             <e p="ResourceLoaderLauncher.cs" t="Include" />
           </e>
+          <e p="UnityBuildInAssetGet" t="Include">
+            <e p="Editor" t="Include">
+              <e p="BuiltInResourcesWindow.cs" t="Include" />
+              <e p="BuiltInResourcesWindow_2_Editor.cs" t="Include" />
+            </e>
+          </e>
           <e p="UnityResolutionDialog-master" t="Include">
             <e p="NewResolutionDialogAssembly.asmdef" t="Include" />
             <e p="Scripts" t="Include">
@@ -90,6 +96,28 @@
           <e p="readme_DOTweenPro.txt" t="Include" />
         </e>
         <e p="Editor" t="Include">
+          <e p="Action" t="Include">
+            <e p="MotionEditor" t="Include">
+              <e p="Resources" t="Include">
+                <e p="MotionEditor.uss" t="Include" />
+                <e p="MotionEditor.uxml" t="Include" />
+              </e>
+              <e p="Scripts" t="Include">
+                <e p="EditorInternalHacker.cs" t="Include" />
+                <e p="GameConstants" t="Include">
+                  <e p="WeaponType.cs" t="Include" />
+                </e>
+                <e p="MiddleWindow" t="Include">
+                  <e p="MiddleWindow.cs" t="Include" />
+                  <e p="Preview" t="Include">
+                    <e p="MotionPreview.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="MotionEditor.cs" t="Include" />
+                <e p="MotionEditorUtility.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="Game" t="Include">
             <e p="Buff" t="Include">
               <e p="BuffDebugEditor.cs" t="Include" />
@@ -97,8 +125,7 @@
           </e>
           <e p="OpenSceneTool.cs" t="Include" />
           <e p="Utility" t="Include">
-            <e p="BuiltInResourcesWindow.cs" t="Include" />
-            <e p="BuiltInResourcesWindow_2_Editor.cs" t="Include" />
+            <e p="IElementWindow.cs" t="Include" />
             <e p="UiBuilder" t="Include">
               <e p="CommonUSS.uss" t="Include" />
             </e>

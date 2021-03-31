@@ -1,9 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<engine:UXML
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:engine="UnityEngine.UIElements"
-    xmlns:editor="UnityEditor.UIElements"
-    xsi:noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd"
->
-    <engine:Label text="Hello World! From UXML" />
-</engine:UXML>
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="ME-Root" style="width: 100%; height: 100%; flex-direction: row;">
+        <ui:VisualElement name="ME-Left" style="width: 30%; height: auto;" />
+        <ui:VisualElement name="ME-Middle" style="width: 40%;">
+            <ui:VisualElement name="ME-Preview" style="height: 60%; align-items: stretch; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0;">
+                <uie:Toolbar name="Toolbar" style="height: 40px;" />
+                <uie:Toolbar name="Toolbar" style="height: 40px;" />
+                <ui:IMGUIContainer name="IMGUIContainer-Preview" style="height: 100%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ME-Timeline" style="height: 40%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ME-Right" style="width: 30%;" />
+    </ui:VisualElement>
+</ui:UXML>

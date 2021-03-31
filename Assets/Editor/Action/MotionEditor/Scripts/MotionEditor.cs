@@ -3,35 +3,42 @@ using UnityEngine;
 using UnityEngine.UIElements;
 using UnityEditor.UIElements;
 
-
-public class MotionEditor : EditorWindow
+namespace ASeKi.action
 {
-    [MenuItem("Window/UIElements/MotionEditor")]
-    public static void ShowExample()
+    public class MotionEditor : EditorWindow
     {
-        MotionEditor wnd = GetWindow<MotionEditor>();
-        wnd.titleContent = new GUIContent("MotionEditor");
-    }
+        public static EditorWindow motionEditorWindows = null;
+    
+        private const string RES_ROOT_PATH = "Assets/Editor/Action/MotionEditor/Resources/";
 
-    public void OnEnable()
-    {
-        // Each editor window contains a root VisualElement object
-        VisualElement root = rootVisualElement;
+        [MenuItem("SeKi/Action/Open Motion Editor #&m", false, 1500000)]
+        public static void OpenWindow()
+        {
+            motionEditorWindows = GetWindow<MotionEditor>();
+            Texture icon = AssetDatabase.LoadAssetAtPath<Texture>($"{RES_ROOT_PATH}/Icon/motion-icon.png");
+            motionEditorWindows.titleContent = new GUIContent("Motion Editor", icon);
+        }
 
-        // VisualElements objects can contain other VisualElement following a tree hierarchy.
-        VisualElement label = new Label("Hello World! From C#");
-        root.Add(label);
+        public void OnEnable()
+        {
+            // TODO:AssetDatabase.LoadAssetAtPath<Texture> 拿到编辑器需要的图片
+            // TODO:拿到编辑器需要的数据并进行初步操作（查空、按需排序等）
+            
+            VisualElement root = rootVisualElement;
+            VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/Action/MotionEditor/Resources/MotionEditor.uxml");
+            StyleSheet styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/Action/MotionEditor/Resources/MotionEditor.uss");
+            VisualElement myTree = visualTree.CloneTree();
+            root.Add(myTree);
+            myTree.styleSheets.Add(styleSheet);
+            
+            VisualElement middleWindow = myTree.Q<VisualElement>("ME-Middle");
+            initMiddleWindow(middleWindow);
+        }
 
-        // Import UXML
-        var visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/Editor/Action/MotionEditor/Resources/MotionEditor.uxml");
-        VisualElement labelFromUXML = visualTree.CloneTree();
-        root.Add(labelFromUXML);
-
-        // A stylesheet can be added to a VisualElement.
-        // The style will be applied to the VisualElement and all of its children.
-        var styleSheet = AssetDatabase.LoadAssetAtPath<StyleSheet>("Assets/Editor/Action/MotionEditor/Resources/MotionEditor.uss");
-        VisualElement labelWithStyle = new Label("Hello World! With Style");
-        labelWithStyle.styleSheets.Add(styleSheet);
-        root.Add(labelWithStyle);
+        private void initMiddleWindow(VisualElement visualElement)
+        {
+            MiddleWindow middleWindow = new MiddleWindow(visualElement,this);
+            middleWindow.OnEnable();
+        }
     }
 }
