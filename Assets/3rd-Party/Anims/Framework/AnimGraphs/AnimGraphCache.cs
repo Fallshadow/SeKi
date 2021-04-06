@@ -32,7 +32,8 @@ namespace Framework.AnimGraphs
             const int MAX = 20;
             cache = new AssetCache(MAX,(int resourceID) => {
                 // TODO:这里调用底层资源系统API，进行资源回收，传入的参数就是资源id
-                act.AssetBundleCore.ResourceLoaderProxy.instance.UnloadInSync(resourceID);
+                // TODO:这里是Rex自己的资源读取脚本，需要搬过来
+                // act.AssetBundleCore.ResourceLoaderProxy.instance.UnloadInSync(resourceID);
             });
             AnimGraphLoader.LoadAnimationClip = LoadAnimationClip;
             AnimGraphLoader.LoadAvatarMask = LoadAvatarMask;
@@ -57,8 +58,9 @@ namespace Framework.AnimGraphs
             {
                 return cache.New<AnimationClip>(resourceID);
             }
-            // 这里 AssetMapping.GetAnimationClip 替换成项目资源加载API
-            cache.Register(resourceID, act.AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<AnimationClip>(resourceID));
+            // TODO：这里 AssetMapping.GetAnimationClip 替换成项目资源加载API
+            // TODO:这里是Rex自己的资源读取脚本，需要搬过来
+            // cache.Register(resourceID, act.AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<AnimationClip>(resourceID));
             return cache.New<AnimationClip>(resourceID);
         }
 
@@ -69,8 +71,9 @@ namespace Framework.AnimGraphs
             {
                 return cache.New<AvatarMask>(resourceID);
             }
-            // 这里 AssetMapping.GetAvatarMask 替换成项目资源加载API
-            cache.Register(resourceID, act.AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<AvatarMask>(resourceID));
+            // TODO：这里 AssetMapping.GetAvatarMask 替换成项目资源加载API
+            // TODO:这里是Rex自己的资源读取脚本，需要搬过来
+            // cache.Register(resourceID, act.AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<AvatarMask>(resourceID));
             return cache.New<AvatarMask>(resourceID);
         }
 
