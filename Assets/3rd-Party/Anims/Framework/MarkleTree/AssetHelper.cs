@@ -4,7 +4,9 @@
     {
         public static int AssetPathToGUID(string assetPath)
         {
-            return act.Resource.ResourceUtility.GetHashCodeByAssetPath(assetPath);
+            // TODO:这里是Rex自己的资源读取脚本，需要搬过来
+            // return act.Resource.ResourceUtility.GetHashCodeByAssetPath(assetPath);
+            return 0;
         }
 
     }
