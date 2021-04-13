@@ -1,0 +1,30 @@
+Button {
+    width: 30;
+    height: 20;
+    align-self: flex-end;
+}
+
+.container {
+    background-color: rgb(72, 90, 69);
+    margin: 5, 10, 5, 0;
+    padding: 2;  
+    border-width: 2;
+    border-radius: 4;
+    border-color: #909090;
+}
+
+.heading{
+    margin: 5, 0, 10;
+    font-size: 20;
+    font-style: bold;
+    align-self:center;
+    color: rgb(226, 226, 226);
+}
+
+.heading:hover{
+    margin: 5, 0, 10;
+    font-size: 20;
+    font-style: bold;
+    align-self:center;
+    color: rgb(117, 151, 231);
+}

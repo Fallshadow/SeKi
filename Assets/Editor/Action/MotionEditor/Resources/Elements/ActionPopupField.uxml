@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement class="container" style="align-items: center; flex-direction: row;">
+        <ui:Label text="Action Popup Field" name="Label-Title" class="heading" style="width: 50%; height: 20px; margin-left: 3px; -unity-text-align: middle-left;" />
+        <ui:VisualElement name="ME-Action-Popup" style="width: 50%; height: 20px;" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -10,6 +10,167 @@
       <e p="AssetBundleCore.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="3rd-Party" t="Include">
+          <e p="Anims" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AnimGraphs" t="Include">
+                <e p="AnimatorControllerTools" t="Include">
+                  <e p="AnimGraphSerializationWindow.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeAnimationClip.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeAnimatorState.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeAnimatorStateMachine.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeAnimatorStateTransition.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeBlendTree.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeChildMotion.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeLayer.cs" t="Include" />
+                  <e p="AnimGraphSerializationWindow.DeserializeMotion.cs" t="Include" />
+                  <e p="AnimGraphSerializetionWindow.Deserialization.cs" t="Include" />
+                  <e p="AnimGraphSerializetionWindow.DeserialzeAnimatorCondition.cs" t="Include" />
+                  <e p="DeserializationWindow.cs" t="Include" />
+                </e>
+                <e p="Serialization" t="Include">
+                  <e p="AnimGraphAnimationClipScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphBlendTreeScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphChildMotionScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphLayersScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphLayerTransitionScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphMotionScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphNodeScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphParameterScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphStateScriptableObject.cs" t="Include" />
+                  <e p="AnimGraphTransitionScriptableObject.cs" t="Include" />
+                  <e p="IDeserialization.cs" t="Include" />
+                  <e p="IPreDeserialization.cs" t="Include" />
+                </e>
+                <e p="Visualizer" t="Include">
+                  <e p="AnimGraphVisualizerWindow.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Framework.Editor.asmdef" t="Include" />
+            </e>
+            <e p="Framework" t="Include">
+              <e p="AnimGraphs" t="Include">
+                <e p="AnimGraphCache.cs" t="Include" />
+                <e p="AnimGraphContainer.cs" t="Include" />
+                <e p="AnimGraphController.cs" t="Include" />
+                <e p="AnimGraphLoader.cs" t="Include" />
+                <e p="AnimGraphPlayer.API.cs" t="Include" />
+                <e p="AnimGraphPlayer.Command.cs" t="Include" />
+                <e p="AnimGraphPlayer.cs" t="Include" />
+                <e p="AnimGraphPlayer.Layer.cs" t="Include" />
+                <e p="AnimGraphPlayer.MotionNode.cs" t="Include" />
+                <e p="AnimGraphPlayer.OutPut.cs" t="Include" />
+                <e p="AnimGraphPlayer.Parameter.cs" t="Include" />
+                <e p="AnimGraphPlayer.Pipeline.cs" t="Include" />
+                <e p="AnimGraphPlayer.Resource.cs" t="Include" />
+                <e p="AnimGraphPlayer.Timeline.cs" t="Include" />
+                <e p="AnimGraphPlayer.Transition.cs" t="Include" />
+                <e p="AnimGraphPlayerConfig.cs" t="Include" />
+                <e p="AssetCache.cs" t="Include" />
+                <e p="Command" t="Include">
+                  <e p="PlayCommand.cs" t="Include" />
+                  <e p="PlayCommandType.cs" t="Include" />
+                </e>
+                <e p="DataAssets" t="Include">
+                  <e p="Array" t="Include">
+                    <e p="NArray.cs" t="Include" />
+                  </e>
+                  <e p="Head" t="Include">
+                    <e p="AnimGraphAssetIDMap.cs" t="Include" />
+                    <e p="AnimGraphHashEntry.cs" t="Include" />
+                    <e p="AnimGraphHead.cs" t="Include" />
+                  </e>
+                  <e p="LayerAsset.cs" t="Include" />
+                  <e p="LayerTransitionAsset.cs" t="Include" />
+                  <e p="Motion" t="Include">
+                    <e p="AnimationClipAsset.cs" t="Include" />
+                    <e p="BlendTreeAsset.cs" t="Include" />
+                    <e p="ChildMotionAsset.cs" t="Include" />
+                    <e p="MotionAsset.cs" t="Include" />
+                  </e>
+                  <e p="MotionStateAsset.cs" t="Include" />
+                  <e p="NodeAsset.cs" t="Include" />
+                  <e p="Parameter" t="Include">
+                    <e p="ParameterAsset.cs" t="Include" />
+                  </e>
+                  <e p="TransitionAsset.cs" t="Include" />
+                </e>
+                <e p="Enum" t="Include">
+                  <e p="BlendTreeType.cs" t="Include" />
+                  <e p="LayerBlendingMode.cs" t="Include" />
+                  <e p="LayerTransitionType.cs" t="Include" />
+                  <e p="MotionType.cs" t="Include" />
+                  <e p="ParameterType.cs" t="Include" />
+                </e>
+                <e p="GraphCreater.cs" t="Include" />
+                <e p="Handle" t="Include">
+                  <e p="AnimationClipWeight.cs" t="Include" />
+                  <e p="NodeHandle.cs" t="Include" />
+                </e>
+                <e p="Layer" t="Include">
+                  <e p="Layer.cs" t="Include" />
+                </e>
+                <e p="MotionJobs" t="Include">
+                  <e p="MotionAnimatedBool.cs" t="Include" />
+                  <e p="MotionAnimatedFloat.cs" t="Include" />
+                  <e p="MotionAnimatedInt.cs" t="Include" />
+                  <e p="MotionAnimatedProperty.cs" t="Include" />
+                  <e p="MotionJob.cs" t="Include" />
+                  <e p="MotionJobUtil.cs" t="Include" />
+                </e>
+                <e p="PlayerControlPlayable.cs" t="Include" />
+                <e p="ReferenceCount.cs" t="Include" />
+                <e p="Temporary" t="Include">
+                  <e p="AssetMapping.cs" t="Include" />
+                </e>
+                <e p="Timeline" t="Include">
+                  <e p="Motion" t="Include">
+                    <e p="AnimationClipMotion.cs" t="Include" />
+                    <e p="BlendTreeMotion.cs" t="Include" />
+                    <e p="BlendTreeMotion.FreeformCartesian2D.cs" t="Include" />
+                    <e p="BlendTreeMotion.Simple1D.cs" t="Include" />
+                    <e p="Motion.cs" t="Include" />
+                  </e>
+                  <e p="Parameter" t="Include">
+                    <e p="LValue.cs" t="Include" />
+                    <e p="ParameterValue.cs" t="Include" />
+                  </e>
+                  <e p="RuntimeNode.cs" t="Include" />
+                  <e p="RuntimePlayNode.cs" t="Include" />
+                  <e p="TimelineContainer.cs" t="Include" />
+                  <e p="Transition" t="Include">
+                    <e p="RuntimeLayerTransitionNode.cs" t="Include" />
+                    <e p="RuntimeTransitionNode.cs" t="Include" />
+                  </e>
+                </e>
+              </e>
+              <e p="Framework.asmdef" t="Include" />
+              <e p="Inertialization" t="Include">
+                <e p="InertializeModel.cs" t="Include" />
+                <e p="Job" t="Include">
+                  <e p="InertialBlendModule.cs" t="Include" />
+                  <e p="InertializerJob.cs" t="Include" />
+                  <e p="TransformData.cs" t="Include" />
+                </e>
+                <e p="PostInertializer.cs" t="Include" />
+                <e p="PostInertializerTransitionProfile.cs" t="Include" />
+              </e>
+              <e p="MarkleTree" t="Include">
+                <e p="AssetHelper.cs" t="Include" />
+              </e>
+              <e p="Sample" t="Include">
+                <e p="ChainMonterPlay.cs" t="Include" />
+                <e p="MonsterPlay.cs" t="Include" />
+                <e p="MotionAssetMono.cs" t="Include" />
+                <e p="MotionPlay.cs" t="Include" />
+                <e p="MotionPlayManager.cs" t="Include" />
+              </e>
+              <e p="Utilities" t="Include">
+                <e p="ExtensionMethods.cs" t="Include" />
+                <e p="IntPtrEx.cs" t="Include" />
+                <e p="ObjectPool.cs" t="Include" />
+              </e>
+            </e>
+          </e>
           <e p="AssetBundle" t="Include">
             <e p="Core" t="Include">
               <e p="AssetBundleCore.asmdef" t="Include" />
@@ -99,13 +260,23 @@
           <e p="Action" t="Include">
             <e p="MotionEditor" t="Include">
               <e p="Resources" t="Include">
+                <e p="Elements" t="Include">
+                  <e p="ActionPopupField.cs" t="Include" />
+                  <e p="ActionPopupField.uss" t="Include" />
+                  <e p="ActionPopupField.uxml" t="Include" />
+                </e>
                 <e p="MotionEditor.uss" t="Include" />
                 <e p="MotionEditor.uxml" t="Include" />
               </e>
               <e p="Scripts" t="Include">
+                <e p="DependencyHelper" t="Include">
+                  <e p="AssetDepTree.cs" t="Include" />
+                  <e p="AssetTarget.cs" t="Include" />
+                  <e p="MotionDependencyHelper.cs" t="Include" />
+                </e>
                 <e p="EditorInternalHacker.cs" t="Include" />
-                <e p="GameConstants" t="Include">
-                  <e p="WeaponType.cs" t="Include" />
+                <e p="LeftWindow" t="Include">
+                  <e p="LeftWindow.cs" t="Include" />
                 </e>
                 <e p="MiddleWindow" t="Include">
                   <e p="MiddleWindow.cs" t="Include" />
@@ -114,7 +285,23 @@
                   </e>
                 </e>
                 <e p="MotionEditor.cs" t="Include" />
-                <e p="MotionEditorUtility.cs" t="Include" />
+                <e p="UtilityEditor" t="Include">
+                  <e p="EditorUtilityStyle.cs" t="Include" />
+                  <e p="MiddleWindow.cs" t="Include" />
+                  <e p="MotionEditorUtility.cs" t="Include" />
+                </e>
+                <e p="UtilityElements" t="Include">
+                  <e p="CreateMotionStateWindow.cs" t="Include" />
+                  <e p="PopupWindow.cs" t="Include" />
+                  <e p="StandaloneFileBrowser" t="Include">
+                    <e p="IStandaloneFileBrowser.cs" t="Include" />
+                    <e p="StandaloneFileBrowser.cs" t="Include" />
+                    <e p="StandaloneFileBrowserEditor.cs" t="Include" />
+                  </e>
+                </e>
+                <e p="UtilityMotion" t="Include">
+                  <e p="MotionDataCollection.cs" t="Include" />
+                </e>
               </e>
             </e>
           </e>
@@ -1147,6 +1334,37 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Action" t="Include">
+            <e p="Action.cs" t="Include" />
+            <e p="ActionGroups" t="Include">
+              <e p="ActionGroupTag.cs" t="Include" />
+            </e>
+            <e p="ActionSetting.cs" t="Include" />
+            <e p="ActionSettingIndexMapping.cs" t="Include" />
+            <e p="Data" t="Include">
+              <e p="AnimatorDataSource.cs" t="Include" />
+            </e>
+            <e p="MotionConfig.cs" t="Include" />
+            <e p="MotionData.cs" t="Include" />
+            <e p="NativeCollection" t="Include">
+              <e p="ChunkData.cs" t="Include" />
+              <e p="ExNativeHashMap.cs" t="Include" />
+              <e p="ExNativeMultiHashMap.cs" t="Include" />
+              <e p="FixedChunkNativeArray.cs" t="Include" />
+              <e p="FixedMultiNativeList.cs" t="Include" />
+              <e p="FixedNativeList.cs" t="Include" />
+              <e p="FixedNativeListWithCount.cs" t="Include" />
+              <e p="FixedTransformAccessArray.cs" t="Include" />
+              <e p="NativeArrayExtension.cs" t="Include" />
+            </e>
+            <e p="RuntimeAction.cs" t="Include" />
+            <e p="ScriptableObject" t="Include">
+              <e p="ActionConditionConfigSO.cs" t="Include" />
+              <e p="ActionGroupSO.cs" t="Include" />
+              <e p="MotionDataListSO.cs" t="Include" />
+            </e>
+            <e p="WeaponType.cs" t="Include" />
+          </e>
           <e p="Constant" t="Include">
             <e p="Constant.asmdef" t="Include" />
             <e p="Setting" t="Include">
@@ -1261,10 +1479,17 @@
             </e>
             <e p="GameController.cs" t="Include" />
           </e>
+          <e p="IO" t="Include">
+            <e p="InputTriggerInfo.cs" t="Include" />
+          </e>
           <e p="Network" t="Include">
             <e p="Model" t="Include">
               <e p="BattleModel.cs" t="Include" />
             </e>
+          </e>
+          <e p="Resource" t="Include">
+            <e p="MerkleTree.cs" t="Include" />
+            <e p="ResourceUtility.cs" t="Include" />
           </e>
           <e p="Timer" t="Include">
             <e p="CycleTimer.cs" t="Include" />
@@ -1459,6 +1684,12 @@
           <e p="11.Fungus" t="Include">
             <e p="TestFungusCollision.cs" t="Include" />
           </e>
+          <e p="12.UnityEngine.Vector3.Distance" t="Include">
+            <e p="TestUnityEngineVector3Distance.cs" t="Include" />
+          </e>
+          <e p="13.String.Intern" t="Include">
+            <e p="TestStringIntern.cs" t="Include" />
+          </e>
           <e p="2.AndroidUnityInteract" t="Include">
             <e p="AndroidTest.cs" t="Include" />
           </e>
@@ -1526,6 +1757,8 @@
       <e p="ConfigTable.csproj" t="IncludeRecursive" />
       <e p="Constant.csproj" t="IncludeRecursive" />
       <e p="Event.csproj" t="IncludeRecursive" />
+      <e p="Framework.csproj" t="IncludeRecursive" />
+      <e p="Framework.Editor.csproj" t="IncludeRecursive" />
       <e p="Fungus.csproj" t="IncludeRecursive" />
       <e p="Fungus.FungusLuaEditor.csproj" t="IncludeRecursive" />
       <e p="Fungus.FungusLuaJSONCheckerEditor.csproj" t="IncludeRecursive" />
@@ -1535,6 +1768,125 @@
       <e p="FungusEditorTests.csproj" t="IncludeRecursive" />
       <e p="FungusExamples.csproj" t="IncludeRecursive" />
       <e p="FungusPlayModeTests.csproj" t="IncludeRecursive" />
+      <e p="LocalPackages" t="Include">
+        <e p="com.unity.animation.rigging" t="Include">
+          <e p="Editor" t="Include">
+            <e p="AnimationRig" t="Include">
+              <e p="Constraints" t="Include">
+                <e p="BlendConstraintEditor.cs" t="Include" />
+                <e p="ChainIKConstraintEditor.cs" t="Include" />
+                <e p="DampedTransformEditor.cs" t="Include" />
+                <e p="MultiAimConstraintEditor.cs" t="Include" />
+                <e p="MultiParentConstraintEditor.cs" t="Include" />
+                <e p="MultiPositionConstraintEditor.cs" t="Include" />
+                <e p="MultiReferentialConstraintEditor.cs" t="Include" />
+                <e p="MultiRotationConstraintEditor.cs" t="Include" />
+                <e p="OverrideTransformEditor.cs" t="Include" />
+                <e p="TwistCorrectionEditor.cs" t="Include" />
+                <e p="TwoBoneIKConstraintEditor.cs" t="Include" />
+              </e>
+              <e p="RigBuilderEditor.cs" t="Include" />
+              <e p="RigEditor.cs" t="Include" />
+              <e p="RigTransformEditor.cs" t="Include" />
+              <e p="WeightedTransformDrawer.cs" t="Include" />
+            </e>
+            <e p="Attributes" t="Include">
+              <e p="CustomOverlayAttribute.cs" t="Include" />
+            </e>
+            <e p="Effectors" t="Include">
+              <e p="IRigEffector.cs" t="Include" />
+              <e p="IRigEffectorOverlay.cs" t="Include" />
+              <e p="RigEffector.cs" t="Include" />
+              <e p="RigEffectorOverlay.cs" t="Include" />
+              <e p="RigEffectorRenderer.cs" t="Include" />
+              <e p="RigEffectorWizard.cs" t="Include" />
+            </e>
+            <e p="Resources" t="Include">
+              <e p="Shaders" t="Include">
+                <e p="BoneHandles.shader" t="Include" />
+                <e p="RigEffector.shader" t="Include" />
+              </e>
+            </e>
+            <e p="Unity.Animation.Rigging.asmdef" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="AnimationRiggingContextMenus.cs" t="Include" />
+              <e p="AnimationRiggingEditorUtils.cs" t="Include" />
+              <e p="AnimationRiggingMenu.cs" t="Include" />
+              <e p="BoneRendererEditor.cs" t="Include" />
+              <e p="BoneRendererUtil.cs" t="Include" />
+              <e p="EditorHelpers.cs" t="Include" />
+              <e p="SceneViewOverlay.cs" t="Include" />
+              <e p="Vector3BoolDrawer.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Runtime" t="Include">
+            <e p="AnimationJobs" t="Include">
+              <e p="AnimationJobCache.cs" t="Include" />
+              <e p="BlendConstraintJob.cs" t="Include" />
+              <e p="ChainIKConstraintJob.cs" t="Include" />
+              <e p="DampedTransformJob.cs" t="Include" />
+              <e p="IAnimatableProperty.cs" t="Include" />
+              <e p="IAnimationJobBinder.cs" t="Include" />
+              <e p="IAnimationJobData.cs" t="Include" />
+              <e p="IWeightedAnimationJob.cs" t="Include" />
+              <e p="MultiAimConstraintJob.cs" t="Include" />
+              <e p="MultiParentConstraintJob.cs" t="Include" />
+              <e p="MultiPositionConstraintJob.cs" t="Include" />
+              <e p="MultiReferentialConstraintJob.cs" t="Include" />
+              <e p="MultiRotationConstraintJob.cs" t="Include" />
+              <e p="OverrideTransformJob.cs" t="Include" />
+              <e p="RigSyncSceneToStreamJob.cs" t="Include" />
+              <e p="TransformHandle.cs" t="Include" />
+              <e p="TwistCorrectionJob.cs" t="Include" />
+              <e p="TwoBoneIKConstraintJob.cs" t="Include" />
+              <e p="WeightedTransformArrayBinder.cs" t="Include" />
+            </e>
+            <e p="AnimationRig" t="Include">
+              <e p="Constraints" t="Include">
+                <e p="BlendConstraint.cs" t="Include" />
+                <e p="ChainIKConstraint.cs" t="Include" />
+                <e p="DampedTransform.cs" t="Include" />
+                <e p="MultiAimConstraint.cs" t="Include" />
+                <e p="MultiParentConstraint.cs" t="Include" />
+                <e p="MultiPositionConstraint.cs" t="Include" />
+                <e p="MultiReferentialConstraint.cs" t="Include" />
+                <e p="MultiRotationConstraint.cs" t="Include" />
+                <e p="OverrideTransform.cs" t="Include" />
+                <e p="SyncTransConstraint.cs" t="Include" />
+                <e p="TwistCorrection.cs" t="Include" />
+                <e p="TwoBoneIKConstraint.cs" t="Include" />
+              </e>
+              <e p="IRigConstraint.cs" t="Include" />
+              <e p="Rig.cs" t="Include" />
+              <e p="RigBuilder.cs" t="Include" />
+              <e p="RigConstraint.cs" t="Include" />
+              <e p="RigTransform.cs" t="Include" />
+              <e p="RigUtils.cs" t="Include" />
+              <e p="WeightedTransform.cs" t="Include" />
+              <e p="WeightedTransformArray.cs" t="Include" />
+            </e>
+            <e p="AnimGraph" t="Include">
+              <e p="AnimGraphRigBuilder.cs" t="Include" />
+              <e p="TargetSyncer.cs" t="Include" />
+            </e>
+            <e p="Attributes" t="Include">
+              <e p="SyncSceneToStreamAttribute.cs" t="Include" />
+            </e>
+            <e p="Effectors" t="Include">
+              <e p="IRigEffectorHolder.cs" t="Include" />
+              <e p="RigEffectorData.cs" t="Include" />
+            </e>
+            <e p="Unity.Animation.Rigging.asmdef" t="Include" />
+            <e p="Utils" t="Include">
+              <e p="AffineTransform.cs" t="Include" />
+              <e p="AnimationRuntimeUtils.cs" t="Include" />
+              <e p="BoneRenderer.cs" t="Include" />
+              <e p="QuaternionExt.cs" t="Include" />
+              <e p="Vector3Bool.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="NewResolutionDialog.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
@@ -1544,6 +1896,8 @@
       <e p="SimpleAnimationComponent.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="Timer.csproj" t="IncludeRecursive" />
+      <e p="Unity.Animation.Rigging.csproj" t="IncludeRecursive" />
+      <e p="Unity.Animation.Rigging.Editor.csproj" t="IncludeRecursive" />
       <e p="Utility.csproj" t="IncludeRecursive" />
     </e>
   </component>

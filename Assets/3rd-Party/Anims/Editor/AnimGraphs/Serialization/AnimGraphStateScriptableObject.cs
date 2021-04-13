@@ -6,7 +6,8 @@ using Unity.Mathematics;
 using UnityEngine;
 namespace Framework.AnimGraphs
 {
-    [System.Serializable]
+    // 状态临时文件，包含一个动画状态的各种信息
+    [Serializable]
     public class AnimGraphStateScriptableObject : ScriptableObject , IPreDeserialization, IDeserialization
     {
         public int layer;

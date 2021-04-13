@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using ASeKi;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -8,19 +9,21 @@ namespace ASeKi.action
 {
     public class MiddleWindow : IElementWindow
     {
-        private VisualElement parent = null;
-        private MotionEditor meRoot = null;
+        private VisualElement meRoot = null;
+        private MotionEditor parent = null;
+        
+        private DefaultAsset curDataFolder;
         
         public MiddleWindow(VisualElement visualElement,MotionEditor motionEditor)
         {
-            parent = visualElement;
-            meRoot = motionEditor;
+            meRoot = visualElement;
+            parent = motionEditor;
         }
         
         public void OnEnable()
         {
             // 初始化各个内部控件
-            IMGUIContainer imguiPreview = parent.Q<IMGUIContainer>("IMGUIContainer-Preview");
+            IMGUIContainer imguiPreview = meRoot.Q<IMGUIContainer>("IMGUIContainer-Preview");
             initImguiPreview(imguiPreview);
         }
 
@@ -59,5 +62,10 @@ namespace ASeKi.action
         }
 
         #endregion
+        
+        public DefaultAsset GetCurFolder()
+        {
+            return curDataFolder;
+        }
     }
 }

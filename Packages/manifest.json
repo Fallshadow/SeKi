@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "com.unity.2d.sprite": "1.0.0",
-    "com.unity.animation.rigging" : "file:../LocalPackages/com.unity.animation.rigging",
+    "com.unity.animation.rigging": "file:../LocalPackages/com.unity.animation.rigging",
+    "com.unity.assetbundlebrowser": "1.7.0",
     "com.unity.cinemachine": "2.7.2",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.collections": "0.6.0-preview.9",

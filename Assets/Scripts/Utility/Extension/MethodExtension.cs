@@ -108,4 +108,33 @@ public static class MethodExtension
     }
 
     #endregion
+
+    #region Dictionary
+
+    public static void AddIfNotContains<TKey, TValue>(this Dictionary<TKey, TValue> source, TKey key, TValue value)
+    {
+        if (source.ContainsKey(key))
+        {
+            return;
+        }
+        else
+        {
+            source.Add(key, value);
+        }
+    }
+    
+    public static void AddOrReplace<TKey, TValue>(this Dictionary<TKey, TValue> source, TKey key, TValue value)
+    {
+        if (source.ContainsKey(key))
+        {
+            source[key] = value;
+        }
+        else
+        {
+            source.Add(key, value);
+        }
+    }
+
+    #endregion
+    
 }

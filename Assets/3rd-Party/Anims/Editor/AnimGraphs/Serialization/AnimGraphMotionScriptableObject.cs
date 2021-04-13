@@ -5,7 +5,7 @@ using System.IO;
 using UnityEngine;
 namespace Framework.AnimGraphs
 {
-    [System.Serializable]
+    [Serializable]
     public abstract class AnimGraphMotionScriptableObject : ScriptableObject, IPreDeserialization
     {
         public bool isLooping;
