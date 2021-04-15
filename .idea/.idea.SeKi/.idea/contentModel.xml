@@ -1542,46 +1542,6 @@
           </e>
         </e>
         <e p="Study" t="Include">
-          <e p="Playable" t="Include">
-            <e p="SimpleAnimationComponent" t="Include">
-              <e p="CustomPlayableExtensions.cs" t="Include" />
-              <e p="Editor" t="Include">
-                <e p="SimpleAnimationComponent-Editor.asmdef" t="Include" />
-                <e p="SimpleAnimationEditor.cs" t="Include" />
-              </e>
-              <e p="SimpleAnimation.cs" t="Include" />
-              <e p="SimpleAnimation_impl.cs" t="Include" />
-              <e p="SimpleAnimationComponent.asmdef" t="Include" />
-              <e p="SimpleAnimationPlayable.cs" t="Include" />
-              <e p="SimpleAnimationPlayable_States.cs" t="Include" />
-              <e p="Tests" t="Include">
-                <e p="AnimationProxy.cs" t="Include" />
-                <e p="IAnimation.cs" t="Include" />
-                <e p="PerformanceTests" t="Include">
-                  <e p="ComplexWithTransition" t="Include">
-                    <e p="SimpleAnimationTransitions.cs" t="Include" />
-                  </e>
-                  <e p="TestUI.cs" t="Include" />
-                </e>
-                <e p="PlaymodeTests" t="Include">
-                  <e p="ComparativeTests" t="Include">
-                    <e p="BaseConditionsTests.cs" t="Include" />
-                    <e p="ClipManagementTests.cs" t="Include" />
-                    <e p="ComparativeTestFixture.cs" t="Include" />
-                    <e p="DifferencesTests.cs" t="Include" />
-                    <e p="MiscTests.cs" t="Include" />
-                    <e p="PlaybackTests.cs" t="Include" />
-                    <e p="QueueTests.cs" t="Include" />
-                    <e p="StateAccessTests.cs" t="Include" />
-                  </e>
-                  <e p="SimpleAnimationTests.cs" t="Include" />
-                </e>
-                <e p="SimpleAnimation-Tests.asmdef" t="Include" />
-                <e p="SimpleAnimationProxy.cs" t="Include" />
-              </e>
-            </e>
-            <e p="TestPlayable.cs" t="Include" />
-          </e>
           <e p="UiUtility" t="Include">
             <e p="SekiInfiniteScroll" t="Include">
               <e p="SekiInfiniteScrollTest.cs" t="Include" />
@@ -1678,6 +1638,13 @@
           </e>
         </e>
         <e p="ZDemand" t="Include">
+          <e p="1.Playable" t="Include">
+            <e p="TestPlayableCommonPlay.cs" t="Include" />
+            <e p="TestPlayableMixingPlay.cs" t="Include" />
+            <e p="TestPlayablePauseStatus.cs" t="Include" />
+            <e p="TestPlayableSelfCurve.cs" t="Include" />
+            <e p="TestPlayableTwoOutPut.cs" t="Include" />
+          </e>
           <e p="10.GameCameraControlLikeScene" t="Include">
             <e p="GameCameraControlLikeScene.cs" t="Include" />
           </e>
@@ -1689,6 +1656,20 @@
           </e>
           <e p="13.String.Intern" t="Include">
             <e p="TestStringIntern.cs" t="Include" />
+          </e>
+          <e p="14.CreateInspectorFromCode" t="Include">
+            <e p="TestCreateInspectorFromCode.cs" t="Include" />
+          </e>
+          <e p="15.AnimClipOtherCurveGetSet" t="Include">
+            <e p="Editor" t="Include">
+              <e p="AnimClipAddCurveEditor.cs" t="Include" />
+              <e p="AnimClipAddCurveEditor.uss" t="Include" />
+              <e p="AnimClipAddCurveEditor.uxml" t="Include" />
+              <e p="TestAnimClipOtherCurveGetSet.cs" t="Include" />
+            </e>
+          </e>
+          <e p="16.AnimClipExportFromFBX" t="Include">
+            <e p="FBXAnimationExporter.cs" t="Include" />
           </e>
           <e p="2.AndroidUnityInteract" t="Include">
             <e p="AndroidTest.cs" t="Include" />
@@ -1734,6 +1715,9 @@
               <e p="CCFreeLookPetCameraPoint.cs" t="Include" />
               <e p="CCFreeLookScene.cs" t="Include" />
             </e>
+          </e>
+          <e p="TempTest" t="Include">
+            <e p="NewPlayableAsset.cs" t="Include" />
           </e>
           <e p="目录.txt" t="Include" />
         </e>
@@ -1891,9 +1875,6 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SeKi.sln" t="IncludeFlat" />
-      <e p="SimpleAnimation-Tests.csproj" t="IncludeRecursive" />
-      <e p="SimpleAnimationComponent-Editor.csproj" t="IncludeRecursive" />
-      <e p="SimpleAnimationComponent.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
       <e p="Timer.csproj" t="IncludeRecursive" />
       <e p="Unity.Animation.Rigging.csproj" t="IncludeRecursive" />
