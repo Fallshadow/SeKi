@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="VisualElement-MainWindow" style="height: 200px;">
+        <Style src="AnimClipAddCurveEditor.uss" />
+        <uie:ObjectField label="AnimationClip" name="ObjectField-AnimationClip" style="height: 20px;" />
+        <ui:ScrollView name="ScrollView-Curves" style="height: 150px;">
+            <ui:IMGUIContainer name="IMGUIContainer-CurveWindow" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>
