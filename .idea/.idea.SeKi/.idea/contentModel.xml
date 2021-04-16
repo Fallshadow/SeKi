@@ -1642,6 +1642,7 @@
             <e p="TestPlayableCommonPlay.cs" t="Include" />
             <e p="TestPlayableMixingPlay.cs" t="Include" />
             <e p="TestPlayablePauseStatus.cs" t="Include" />
+            <e p="TestPlayableQuene.cs" t="Include" />
             <e p="TestPlayableSelfCurve.cs" t="Include" />
             <e p="TestPlayableTwoOutPut.cs" t="Include" />
           </e>
