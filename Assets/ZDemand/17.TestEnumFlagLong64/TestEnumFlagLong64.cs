@@ -28,7 +28,7 @@ enum EnumFlagULong64 : ulong
 }
 
 
-public class TestEnumFlagLong32 : MonoBehaviour
+public class TestEnumFlagLong64 : MonoBehaviour
 {
     private void Start()
     {
