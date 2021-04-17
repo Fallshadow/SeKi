@@ -8,9 +8,9 @@ using UnityEditor.UIElements;
 public class AnimClipAddCurveEditor : EditorWindow
 {
     private AnimationClip curAnimationClip = null;
-    private List<AnimationCurve> curves = new List<AnimationCurve>();
-    private List<EditorCurveBinding> bindings = new List<EditorCurveBinding>();
-    
+    public List<AnimationCurve> Curves = new List<AnimationCurve>();
+    public List<EditorCurveBinding> Bindings = new List<EditorCurveBinding>();
+
     [MenuItem("Tests/自制编辑器/动画文件加入IK等曲线工具")]
     public static void ShowExample()
     {
@@ -20,6 +20,8 @@ public class AnimClipAddCurveEditor : EditorWindow
 
     public void OnEnable()
     {
+        Undo.RegisterCompleteObjectUndo(this,"AnimClipAddCurveEditor");
+
         // 初始化
         VisualElement root = rootVisualElement;
         VisualTreeAsset visualTree = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>("Assets/ZDemand/15.AnimClipOtherCurveGetSet/Editor/AnimClipAddCurveEditor.uxml");
@@ -39,6 +41,7 @@ public class AnimClipAddCurveEditor : EditorWindow
             {
                 curAnimationClip = obj as AnimationClip;
                 refreshCurves(curAnimationClip);
+                AnimationWindowHandler.EditAnimationClip(curAnimationClip);
             }
             else
             {
@@ -53,15 +56,16 @@ public class AnimClipAddCurveEditor : EditorWindow
             // AnimationCurve testCurve = EditorGUILayout.CurveField("", new AnimationCurve());
             EditorGUILayout.BeginVertical();
             
-            for (int index = 0; index < bindings.Count; index++)
+            for (int index = 0; index < Bindings.Count; index++)
             {
                 EditorGUILayout.BeginHorizontal();
                 
-                EditorGUILayout.LabelField(bindings[index].propertyName);
-                curves[index] = EditorGUILayout.CurveField(curves[index]);
-                
+                EditorGUILayout.LabelField(Bindings[index].propertyName);
+                Curves[index] = EditorGUILayout.CurveField(Curves[index]);
+
                 EditorGUILayout.EndHorizontal();
             }
+            
 
             EditorGUILayout.EndVertical();
         };
@@ -77,14 +81,17 @@ public class AnimClipAddCurveEditor : EditorWindow
             Debug.LogError("当前动画文件为空！");
             return;
         }
-        Undo.RecordObject(clip,"Clip");
-        bindings.Clear();
-        curves.Clear();
+        
+        Bindings.Clear();
+        Curves.Clear();
         EditorCurveBinding[] curveBindings = AnimationUtility.GetCurveBindings(clip);
         foreach (var curveBinding in curveBindings)
         {
-            bindings.Add(curveBinding);
-            curves.Add(AnimationUtility.GetEditorCurve(clip, curveBinding));
+            if (curveBinding.propertyName.Contains("IGG_"))
+            {
+                Bindings.Add(curveBinding);
+                Curves.Add(AnimationUtility.GetEditorCurve(clip, curveBinding));
+            }
         }
     }
 
@@ -96,9 +103,9 @@ public class AnimClipAddCurveEditor : EditorWindow
             return;
         }
         
-        for (int index = 0; index < bindings.Count; index++)
+        for (int index = 0; index < Bindings.Count; index++)
         {
-            AnimationUtility.SetEditorCurve(curAnimationClip, bindings[index], curves[index]);
+            AnimationUtility.SetEditorCurve(curAnimationClip, Bindings[index], Curves[index]);
         }
         
         EditorUtility.SetDirty(curAnimationClip);

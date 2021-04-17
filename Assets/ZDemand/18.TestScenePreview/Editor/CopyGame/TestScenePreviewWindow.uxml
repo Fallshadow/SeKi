@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="VisualElement-Root" style="height: 1000px; width: 1000px;">
+        <ui:IMGUIContainer name="IMGUIContainer-TestPreview" style="width: 1000px; height: 1000px;" />
+    </ui:VisualElement>
+</ui:UXML>

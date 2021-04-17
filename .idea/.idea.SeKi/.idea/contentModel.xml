@@ -1672,6 +1672,24 @@
           <e p="16.AnimClipExportFromFBX" t="Include">
             <e p="FBXAnimationExporter.cs" t="Include" />
           </e>
+          <e p="17.TestEnumFlagLong64" t="Include">
+            <e p="TestEnumFlagLong64.cs" t="Include" />
+          </e>
+          <e p="18.TestScenePreview" t="Include">
+            <e p="Editor" t="Include">
+              <e p="CopyEditor" t="Include">
+                <e p="CopyEditor.cs" t="Include" />
+                <e p="CopyEditor.uxml" t="Include" />
+              </e>
+              <e p="CopyGame" t="Include">
+                <e p="TestScenePreviewWindow.cs" t="Include" />
+                <e p="TestScenePreviewWindow.uss" t="Include" />
+                <e p="TestScenePreviewWindow.uxml" t="Include" />
+              </e>
+            </e>
+            <e p="TestEditorScenePreview.cs" t="Include" />
+            <e p="TestScenePreview.cs" t="Include" />
+          </e>
           <e p="2.AndroidUnityInteract" t="Include">
             <e p="AndroidTest.cs" t="Include" />
           </e>

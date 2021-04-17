@@ -20,7 +20,7 @@ public static class TestAnimClipOtherCurveGetSet
         {
             if (obj is AnimationClip clip)
             {
-                EditorCurveBinding binding = EditorCurveBinding.FloatCurve(string.Empty, typeof(Animator), "IKWeight");
+                EditorCurveBinding binding = EditorCurveBinding.FloatCurve(string.Empty, typeof(Animator), "IGG_IKWeight");
                 AnimationUtility.SetEditorCurve(clip, binding, AnimationCurve.Linear(0, 1, 2, 3));
             }
                 

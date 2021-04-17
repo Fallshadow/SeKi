@@ -23,7 +23,7 @@ namespace ASeKi.action
                 );
             }
         }
-        
+
         public static class AnimatorType
         {
             private static System.Type type = null;
