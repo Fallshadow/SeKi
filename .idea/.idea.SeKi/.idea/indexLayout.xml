@@ -29,6 +29,7 @@
       <Path>.vs</Path>
       <Path>APK</Path>
       <Path>Library</Path>
+      <Path>LocalPackages</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>
       <Path>UIElementsSchema</Path>
