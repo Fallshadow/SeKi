@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Administrator\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_SeKi.-38938868.00" t="ExcludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\wwwsu\.Rider2019.2\system\resharper-host\Local\Transient\ReSharperHost\v192\SolutionCaches\_SeKi.-38938868.00" t="ExcludeRecursive" />
     <e p="F:\SeKi\SeKi" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -1577,6 +1578,10 @@
             <e p="UnityAPITestSystemInfo.cs" t="Include" />
           </e>
         </e>
+        <e p="Test.txt" t="Include" />
+        <e p="TestFileCopy" t="Include">
+          <e p="Test.txt" t="Include" />
+        </e>
         <e p="Tests" t="Include">
           <e p="Editor" t="Include">
             <e p="FungusCollectionTests.cs" t="Include" />
@@ -1689,8 +1694,15 @@
             <e p="TestEditorScenePreview.cs" t="Include" />
             <e p="TestScenePreview.cs" t="Include" />
           </e>
+          <e p="19.UniversalGravitation" t="Include">
+            <e p="FakeUniversalGravitationCenter.cs" t="Include" />
+            <e p="UniversalGravitationSystem.cs" t="Include" />
+          </e>
           <e p="2.AndroidUnityInteract" t="Include">
             <e p="AndroidTest.cs" t="Include" />
+          </e>
+          <e p="20.TestSomeAPI" t="Include">
+            <e p="TestSomething.cs" t="Include" />
           </e>
           <e p="3.SizeFitterUnderParentFalse" t="Include">
             <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />

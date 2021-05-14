@@ -24,7 +24,7 @@ public class BuiltInResourcesWindow_2_Mono : MonoBehaviour
     }
 
 
-    [InitializeOnLoadMethod]
+    //[InitializeOnLoadMethod]
     static void GetBultinAssetNames ()
     {
         var flags = BindingFlags.Static | BindingFlags.NonPublic;

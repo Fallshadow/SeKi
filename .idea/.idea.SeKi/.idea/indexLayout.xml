@@ -29,9 +29,9 @@
       <Path>.vs</Path>
       <Path>APK</Path>
       <Path>Library</Path>
-      <Path>LocalPackages</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>
+      <Path>TestFileCopy</Path>
       <Path>UIElementsSchema</Path>
       <Path>obj</Path>
       <Path>暂时没用到的通用库</Path>

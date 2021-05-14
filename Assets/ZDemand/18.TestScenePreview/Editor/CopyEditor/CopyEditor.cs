@@ -6,6 +6,8 @@ using UnityEditor.UIElements;
 
 public class CopyEditor : EditorWindow
 {
+    private TestEditorScenePreview m_tesPreview = null;
+    
     [MenuItem("Tests/自制编辑器/测试编辑器预览场景编辑器")]
     public static void ShowExample()
     {
@@ -22,9 +24,9 @@ public class CopyEditor : EditorWindow
         
         IMGUIContainer testModelPreview = root.Q<IMGUIContainer>("IMGUIContainer-TestPreview");
         GUIStyle background = "PreBackgroundSolid";
-        testModelPreview.onGUIHandler = () =>
-        {
-            
-        };
+//        testModelPreview.onGUIHandler = () =>
+//        {
+//            m_tesPreview
+//        };
     }
 }
