@@ -9,11 +9,12 @@ namespace ASeKi.fsm
         public override void Enter()
         {
             initManagers();
+            m_fsm.SwitchToState((int)GameFsmState.RESET);
         }
 
         private void initManagers()
         {
-
+            // 在这里进行各个管理器的初始化
         }
     }
 }

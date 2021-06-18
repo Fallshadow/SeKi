@@ -30,7 +30,9 @@
     public enum CameraEvent : short
     {
         THREE_LAYER_LOOK_CINE,
-        THREE_LAYER_CUT_SCENE,
+        THREE_LAYER_CUT_SCENE,                              // 切换场景
+        THREE_LAYER_CLICK_POS,                              // 切换详细位置
+        THREE_LAYER_INPUT_AREA,                             // 滑动区域
     }
 
     public enum BuffEvent : short

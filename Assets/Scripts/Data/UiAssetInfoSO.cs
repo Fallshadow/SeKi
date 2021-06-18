@@ -36,7 +36,7 @@ namespace ASeKi.data
             {
                 if(instance == null)
                 {
-                    instance = Utility.LoadResources.LoadAsset<UiAssetInfoSO>(constants.ResourcesPathSetting.ScriptableObject + "UiAssetInfoSO");
+                    instance = Utility.LoadResources.LoadAsset<UiAssetInfoSO>(constants.ResourcesPathSetting.SO_FOLDER + "UiAssetInfoSO");
                 }
                 return instance;
             }

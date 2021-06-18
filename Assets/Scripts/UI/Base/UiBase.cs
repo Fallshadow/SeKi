@@ -33,8 +33,11 @@ namespace ASeKi.ui
 
         public virtual bool bDynamicUnload => true;                             // 提供给那些参与动态加载的UI
 
-        public bool IsDontDestroy { get { return isDontDestroy; } }             // 提供给那些永不销毁的UI
+        public bool IsDontDestroy => isDontDestroy;                             // 提供给那些永不销毁的UI
         [SerializeField] protected bool isDontDestroy = false;
+        
+        public bool IsOpen => onCloseCompleteHandler != null;                   // 逻辑上是否已经打开
+        
 
         [NonSerialized] public float? LastCloseTime = null;                     // 窗口最后关闭的unity时间
 

@@ -16,9 +16,9 @@ namespace ASeKi.action
         {
             List<MotionData> datas = new List<MotionData>();
             
-            MotionDataListSO motionDataSetting = Resources.Load<MotionDataListSO>(ResourcesPathSetting.ScriptableObject + ActionSettingIndexMapping.PLAYER_MOTION_DATA_LIST_PATH);
+            // MotionDataListSO motionDataSetting = Resources.Load<MotionDataListSO>(ResourcesPathSetting.ScriptableObject + ActionSettingIndexMapping.PLAYER_MOTION_DATA_LIST_PATH);
             
-            bool ret = motionDataSetting.GetMotionData(type, withNormal, ref datas);
+            // bool ret = motionDataSetting.GetMotionData(type, withNormal, ref datas);
 
             return datas;
         }

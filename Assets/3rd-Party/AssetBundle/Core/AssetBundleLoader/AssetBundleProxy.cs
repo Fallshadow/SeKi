@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ASeKi.AssetBundleCore
+namespace act.AssetBundleCore
 {
     public class AssetBundleProxy
     {
@@ -116,6 +116,23 @@ namespace ASeKi.AssetBundleCore
             throw new System.NotImplementedException();
 #endif
             return filePath;
+        }
+
+        public virtual bool RemoveAssetsReference()
+        {
+            refCount--;
+            if (refCount == 0)
+            {
+#if DEBUG_ASSETBUNDLE
+                    act.debug.PrintSystem.LogWarning(string.Format("RemoveAssetsReference with destroy ab:{0} file:{1}", abHash, file));
+#endif
+                ab.Unload(true);
+
+                manager.DestroyProxy(this);
+                destroySelf();
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -178,14 +178,27 @@
               <e p="AssetBundleLoader" t="Include">
                 <e p="AssetBundleLoaderManager.cs" t="Include" />
                 <e p="AssetBundleProxy.cs" t="Include" />
+                <e p="AsynAssetProxy.cs" t="Include" />
                 <e p="SyncAssetProxy.cs" t="Include" />
               </e>
               <e p="AssetbundlePathSetting.cs" t="Include" />
+              <e p="AssetHashDefine.cs" t="Include" />
+              <e p="AssetHashMapBaseSO.cs" t="Include" />
               <e p="ResourceLoader" t="Include">
                 <e p="FastModeLoaderManager.cs" t="Include" />
                 <e p="ResourceLoaderManager.cs" t="Include" />
+                <e p="ResourceLoaderManagerInfo.cs" t="Include" />
               </e>
               <e p="ResourceLoaderProxy.cs" t="Include" />
+            </e>
+            <e p="Editor" t="Include">
+              <e p="AssetbundleEditor_SerliazeMenus.cs" t="Include" />
+              <e p="AssetBundleGrouper.cs" t="Include" />
+              <e p="AssetBundlePackageManager.cs" t="Include" />
+              <e p="AssetGroup.cs" t="Include" />
+              <e p="Grouper" t="Include">
+                <e p="AssetBundleGrouper_UI.cs" t="Include" />
+              </e>
             </e>
             <e p="ResourceLoaderLauncher.cs" t="Include" />
           </e>
@@ -1397,7 +1410,9 @@
           </e>
           <e p="FSM" t="Include">
             <e p="Game" t="Include">
+              <e p="DebugEntry.cs" t="Include" />
               <e p="Entry.cs" t="Include" />
+              <e p="Reset.cs" t="Include" />
             </e>
           </e>
           <e p="Game" t="Include">
@@ -1502,7 +1517,7 @@
           <e p="UI" t="Include">
             <e p="Base" t="Include">
               <e p="BindingResourceAttribute.cs" t="Include" />
-              <e p="CanvasUiBase.cs" t="Include" />
+              <e p="FullScreenCanvasBase.cs" t="Include" />
               <e p="InteractableUiBase.cs" t="Include" />
               <e p="IUiAnimation.cs" t="Include" />
               <e p="UiAnimator.cs" t="Include" />
@@ -1511,6 +1526,14 @@
               <e p="UiManager_Asset.cs" t="Include" />
               <e p="UiManageStrategy.cs" t="Include" />
               <e p="WindowUiBase.cs" t="Include" />
+            </e>
+            <e p="DebugMain" t="Include">
+              <e p="DebugMainCanvas.cs" t="Include" />
+            </e>
+            <e p="ResMgr" t="Include">
+              <e p="AssetHashMap_UI.cs" t="Include" />
+              <e p="UiAssetEnum.cs" t="Include" />
+              <e p="UiResMgr.cs" t="Include" />
             </e>
           </e>
           <e p="Utility" t="Include">
@@ -1704,6 +1727,9 @@
           <e p="20.TestSomeAPI" t="Include">
             <e p="TestSomething.cs" t="Include" />
           </e>
+          <e p="22.FrontBackRightLeft" t="Include">
+            <e p="TestJudgeDir.cs" t="Include" />
+          </e>
           <e p="3.SizeFitterUnderParentFalse" t="Include">
             <e p="结果是父物体设置为false子物体的contentsizefitter不会计算了啦.txt" t="Include" />
           </e>
@@ -1728,23 +1754,6 @@
           </e>
           <e p="8.ScreenResolution" t="Include">
             <e p="TestScreenResolution.cs" t="Include" />
-          </e>
-          <e p="9.CinemachineThreeLayerLook" t="Include">
-            <e p="CCFreeLook.cs" t="Include" />
-            <e p="CCFreeLookInputCheckArea.cs" t="Include" />
-            <e p="CinemachineController_Test.cs" t="Include" />
-            <e p="Editor" t="Include">
-              <e p="CCFreeLook" t="Include">
-                <e p="CCFreeLookEditor.cs" t="Include" />
-              </e>
-            </e>
-            <e p="ScriptableObject" t="Include">
-              <e p="CCFreeLookCameraLayer.cs" t="Include" />
-              <e p="CCFreeLookCameraPointConfigSO.cs" t="Include" />
-              <e p="CCFreeLookFashionCameraPoint.cs" t="Include" />
-              <e p="CCFreeLookPetCameraPoint.cs" t="Include" />
-              <e p="CCFreeLookScene.cs" t="Include" />
-            </e>
           </e>
           <e p="TempTest" t="Include">
             <e p="NewPlayableAsset.cs" t="Include" />

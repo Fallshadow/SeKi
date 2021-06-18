@@ -15,10 +15,10 @@ namespace ASeKi.debug
         [Flags]
         public enum PrintBy
         {
-            sunshuchao = 1 << 1,
+            SunShuChao = 1 << 1,
             none = 1 << 2,
         }
-        
+
         [System.Diagnostics.Conditional("SeKiDebug")]
         public static void LogWithoutWriter(string str)
         {

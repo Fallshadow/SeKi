@@ -27,7 +27,9 @@
       <Path>.git</Path>
       <Path>.idea</Path>
       <Path>.vs</Path>
+      <Path>ABDepInfo_DT</Path>
       <Path>APK</Path>
+      <Path>Docs</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>

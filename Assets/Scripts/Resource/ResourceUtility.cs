@@ -1,8 +1,9 @@
 using System;
 using System.Security.Cryptography;
 using System.Text;
+using UnityEngine;
 
-namespace ASeKi.Resource
+namespace act.Resource
 {
     public static class ResourceUtility
     {
@@ -36,6 +37,7 @@ namespace ASeKi.Resource
             mt.Add(low.GetHashCode());
             var hash = mt.HashCode;
             mt.Dispose();
+            ASeKi.debug.PrintSystem.Log($"[MD5 Hash] ResourceUtility.GetGuidHashCode 生成Hash : {hash}");
             return hash;
         }
         

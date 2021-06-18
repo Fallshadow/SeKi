@@ -6,6 +6,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.U2D;
 using Object = UnityEngine.Object;
+using act.Resource;
 
 namespace ASeKi.action
 {
@@ -31,7 +32,7 @@ namespace ASeKi.action
         {
             asset = o;
             assetPath = assetPath.Replace('\\', '/');
-            hash = Resource.ResourceUtility.GetHashCodeByAssetPath(assetPath, false);
+            hash = ResourceUtility.GetHashCodeByAssetPath(assetPath, false);
             AssetPath = assetPath;
 
             var atlas = o as SpriteAtlas;

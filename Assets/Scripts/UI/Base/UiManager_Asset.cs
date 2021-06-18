@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System;
 using System.Collections.Generic;
+using act.UIRes;
 
 namespace ASeKi.ui
 {
@@ -9,102 +10,110 @@ namespace ASeKi.ui
     {
         public Sprite DefaultSprite { get; private set; }
         private List<int> keepHashcode = new List<int>();   // 不释放的资源，用于切场景不卸载的资源。
+        private List<int> assetHashCodes = new List<int>(); // 通过GetUiAsset()加载的资源hashcode
 
-        // 调用此接口加载的资源，框架进行没有管理，需要调用下面UnloadAsset自行卸载资源；如果没有卸载，会在切场景的时候由unloadAllAssets统一卸载。
-        public T GetUiAsset<T>(string assetNm, data.UiAssetType assetType = data.UiAssetType.UAT_PREFAB) where T : UnityEngine.Object
+        private void unloadAsset(act.UIRes.UiAssetIndex uiAssetIndex)
         {
-            int hashCode = data.UiAssetInfoSO.Instance.GetUiAssetHashCode(assetType, assetNm);
-            if(hashCode != -1)
-            {
-                //T asset = act.AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<T>(hashCode);
-                //if(asset == null)
-                //{
-                //    debug.PrintSystem.LogError($"[UiManager] Load AB failed. Asset name:{assetNm}; Asset HashCode: {hashCode}; Can`t find assetbundle!");
-                //    return null;
-                //}
-                //if(!assetHashCodes.Contains(hashCode))
-                //{
-                //    assetHashCodes.Add(hashCode);
-                //}
-                //return asset;               
-                return null;
-            }
-            else
-            {
-                debug.PrintSystem.LogError($"[UiManager] Load AB failed. Asset name:{assetNm}; Can`t find hashInfo!");
-                return null;
-            }
-        }
-
-        // 卸载资源
-        private void unloadAsset(UiBase ui)
-        {
-            Type uiType = ui.GetType();
-            Type attrType = typeof(BindingResourceAttribute);
-            BindingResourceAttribute attr = Attribute.GetCustomAttribute(uiType, attrType) as BindingResourceAttribute;
-            int hashCode = ASeKi.data.UiAssetInfoSO.Instance.GetUiAssetHashCode(ASeKi.data.UiAssetType.UAT_PREFAB, attr.AssetId);
-            if(keepHashcode.Contains(hashCode))
+            int hashCode = act.UIRes.UIResMgr.instance.GetUiAssetInfoViaIndex(uiAssetIndex);
+            if (keepHashcode.Contains(hashCode))
             {
                 return;
             }
-            // AssetBundleCore.ResourceLoaderProxy.instance.UnloadInSync(hashCode);
+            AssetBundleCore.ResourceLoaderProxy.instance.Unload(hashCode);
         }
 
         private void unloadAllAssets()
         {
-            //foreach(int hashCode in assetHashCodes)
-            //{
-            //    if(keepHashcode.Contains(hashCode))
-            //    {
-            //        continue;
-            //    }
-            //    act.AssetBundleCore.ResourceLoaderProxy.instance.UnloadInSync(hashCode);
-            //}
-            //assetHashCodes.Clear();
-            //assetHashCodes.AddRange(keepHashcode);
+            foreach (int hashCode in assetHashCodes)
+            {
+                if (keepHashcode.Contains(hashCode))
+                {
+                    continue;
+                }
+                AssetBundleCore.ResourceLoaderProxy.instance.Unload(hashCode);
+            }
+            assetHashCodes.Clear();
+            assetHashCodes.AddRange(keepHashcode);
         }
 
-        private void getUiAsset<T>(Type type, out UiBase ui) where T : UiBase
+        /// <summary>
+        /// 调用此接口加载的资源，框架没有进行管理，需要调用下面UnloadAsset自行卸载资源；如果没有卸载，会在切场景的时候由unloadAllAssets统一卸载。
+        /// </summary>
+        /// <param name="assetNm"></param>
+        /// <returns></returns>
+        public T GetUiAsset<T>(UiAssetIndex index) where T : UnityEngine.Object
         {
+            int hashCode = UIResMgr.instance.GetUiAssetInfoViaIndex(index);
+            if (hashCode == -1)
+            {
+                debug.PrintSystem.LogError($"[UiManager] Load AB failed. Asset Index:{index}; Can`t find hashInfo!");
+                return null;
+            }
+
+            T asset = AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<T>(hashCode);
+            if (asset == null)
+            {
+                debug.PrintSystem.LogError($"[UiManager] Load AB failed. Asset Index:{index}; Asset HashCode: {hashCode}; Can`t find assetbundle!");
+                return null;
+            }
+
+            if (!assetHashCodes.Contains(hashCode))
+            {
+                assetHashCodes.Add(hashCode);
+            }
+            return asset;
+        }
+        
+        /// <summary>
+        /// 与“GetUiAsset（）”配套使用
+        /// </summary>
+        /// <param name="assetName"></param>
+        public void UnloadAsset(UiAssetIndex index, UiAssetType type)
+        {
+            int hashCode = UIResMgr.instance.GetUiAssetInfoViaIndex(index);
+            if (type != UiAssetType.UAT_ATLAS && !assetHashCodes.Contains(hashCode)) //　图集特殊处理，因为图集有些是直接引用到的
+            {
+                return;
+            }
+
+            if (hashCode != -1)
+            {
+                assetHashCodes.Remove(hashCode);
+                AssetBundleCore.ResourceLoaderProxy.instance.Unload(hashCode);
+                debug.PrintSystem.Log($"[UiManager] UnloadAsset Index:{index}; type: {type.ToString()}", Color.green);
+            }
+        }
+        
+        private void getUiViaType<T>(Type type, out UiBase ui) where T : UiBase
+        {
+            debug.PrintSystem.Log($"[UI Open] 获取UI资源中......");
             Type attrType = typeof(BindingResourceAttribute);
             BindingResourceAttribute attr = Attribute.GetCustomAttribute(type, attrType) as BindingResourceAttribute;
-            int hashCode = ASeKi.data.UiAssetInfoSO.Instance.GetUiAssetHashCode(ASeKi.data.UiAssetType.UAT_PREFAB, attr.AssetId);
-            if(hashCode != -1)
-            {
-                debug.PrintSystem.Log($"[UiManager_Asset] 加载资源{hashCode}", debug.PrintSystem.PrintBy.sunshuchao);
-                ui = null;
-                GameObject prefab = ASeKi.AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<GameObject>(hashCode);
-                if(prefab == null)
-                {
-                    debug.PrintSystem.LogError($"[UiManager] Load AB failed. Asset HashCode: {hashCode}",debug.PrintSystem.PrintBy.sunshuchao);
-                    return;
-                }
-                ui = prefab.GetComponent<T>();
-                if(ui.IsDontDestroy)
-                {
-                    if(!keepHashcode.Contains(hashCode))
-                    {
-                        keepHashcode.Add(hashCode);
-                    }
-                }
-            }
-            else
+            int hashCode = UIResMgr.instance.GetUiAssetInfoViaIndex(attr.AssetId);
+            if (hashCode == -1)
             {
                 ui = null;
-                debug.PrintSystem.LogError($"[UiManager] Load AB failed. Asset:{attr.AssetId}---- Can`t find hashCode!",debug.PrintSystem.PrintBy.sunshuchao);
+                debug.PrintSystem.LogError($"[UI Open] Load AB failed. Asset:{attr.AssetId}---- Can`t find hashCode!");
+                return;
             }
-        }
-
-        // 提供默认图，以提示资源丢失
-        private Sprite getDefaultSprite()
-        {
-            if(DefaultSprite == null)
+            debug.PrintSystem.Log($"[UI Open] 成功获取Hash ---- Asset:{attr.AssetId}  HashCode:{hashCode}");
+            GameObject prefab = AssetBundleCore.ResourceLoaderProxy.instance.LoadAsset<GameObject>(hashCode);
+            if (prefab == null)
             {
-                Texture2D tex = GetUiAsset<Texture>(constants.ResourcesPathSetting.DefaultSpriteUiTexture, data.UiAssetType.UAT_HIGH_DEFINITION_TEX) as Texture2D;
-                DefaultSprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
+                debug.PrintSystem.LogError($"[UI Open] Load AB failed. Asset HashCode: {hashCode}");
+                ui = null;
+                return;
             }
-
-            return DefaultSprite;
+            debug.PrintSystem.Log($"[UI Open] 成功加载预制体 ---- Asset:{attr.AssetId}  HashCode:{hashCode}");
+            ui = prefab.GetComponent<T>();
+            if (ui.IsDontDestroy)
+            {
+                if (!keepHashcode.Contains(hashCode))
+                {
+                    debug.PrintSystem.Log("[UI Open] 加入不销毁UI组");
+                    keepHashcode.Add(hashCode);
+                }
+            }
         }
     }
 }

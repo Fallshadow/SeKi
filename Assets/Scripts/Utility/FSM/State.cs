@@ -11,6 +11,7 @@ namespace ASeKi.fsm
         RESET,
         LOAD_SCENE,
         MAIN_TOWN,
+        DEBUG_ENTRY
     }
 
     // 状态本身需要处理逻辑的几个过程：
@@ -18,12 +19,12 @@ namespace ASeKi.fsm
     public class State<T>
     {
         // 状态应该知道自己是属于哪个状态机
-        protected Fsm<T> myfsm;
+        protected Fsm<T> m_fsm;
 
         // 初始化的时候配置状态机
         public void Init(Fsm<T> f)
         {
-            myfsm = f;
+            m_fsm = f;
             onInit();
         }
 

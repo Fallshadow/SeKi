@@ -11,7 +11,7 @@ namespace ASeKi.AssetBundleCore
         protected override void Awake()
         {
             base.Awake();
-            ResourceLoaderProxy.instance.SettingAB(debug.DebugConfig.instance.DisableAssetBundle);
+            ResourceLoaderProxy.instance.Init(debug.DebugConfig.instance.DisableAssetBundle);
         }
 
 

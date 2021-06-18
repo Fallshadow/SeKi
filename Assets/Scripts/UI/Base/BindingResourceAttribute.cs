@@ -1,12 +1,13 @@
 ﻿using System;
+using act.UIRes;
 
 namespace ASeKi.ui
 {
     public class BindingResourceAttribute : Attribute
     {
-        public string AssetId { get; private set; }
+        public UiAssetIndex AssetId { get; private set; }
 
-        public BindingResourceAttribute(string assetId)
+        public BindingResourceAttribute(UiAssetIndex assetId)
         {
             AssetId = assetId;
         }

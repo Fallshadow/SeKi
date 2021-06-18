@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-namespace ASeKi.AssetBundleCore
+namespace act.AssetBundleCore
 {
     public struct AssetInfoSimplify
     {
@@ -17,8 +17,11 @@ namespace ASeKi.AssetBundleCore
         public ulong offset;
     }
 
-    public abstract class ResourceLoaderManager : MonoBehaviour
+    public abstract class ResourceLoaderManager
     {
+        public MonoBehaviour MonoObj => monoObj;
+        private MonoBehaviour monoObj; 
+        
         const int AB_COUNT = 300;
 
         public const int DEFAULT_ASSET_LOADER_COUNT = 500;
@@ -30,6 +33,10 @@ namespace ASeKi.AssetBundleCore
 #if UNITY_EDITOR
         public string BundlePrePath = "";
 #endif
+        public virtual void Init(MonoBehaviour monoObj)
+        {
+            this.monoObj = monoObj;
+        }
 
         public abstract bool ExistAsset(int hash);
 
@@ -41,6 +48,11 @@ namespace ASeKi.AssetBundleCore
         public AssetBundleProxy GetABProxy(int abHash)
         {
             return abProxys[abHash];
+        }
+        
+        public virtual void Unload(int hash, bool bDebug = true)
+        {
+                
         }
     }
 }

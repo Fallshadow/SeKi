@@ -65,11 +65,11 @@ namespace ASeKi.ui
             cam.transform.localPosition = new Vector3(0f, 0f, -distance);
             cam.gameObject.SetActive(false);
 
-            debug.PrintSystem.Log($"-----------UiManageStrategy 初始化3D UI-----------", debug.PrintSystem.PrintBy.sunshuchao);
-            debug.PrintSystem.Log($"UiManageStrategy 设置3D Camera层级 layer：{cam.gameObject.layer}", debug.PrintSystem.PrintBy.sunshuchao);
-            debug.PrintSystem.Log($"UiManageStrategy 设置3D CameraCull cullingMask：{cam.cullingMask}", debug.PrintSystem.PrintBy.sunshuchao);
-            debug.PrintSystem.Log($"UiManageStrategy 设置3D Camera位置 localPosition：{cam.transform.localPosition}", debug.PrintSystem.PrintBy.sunshuchao);
-            debug.PrintSystem.Log($"-----------END-----------", debug.PrintSystem.PrintBy.sunshuchao);
+            debug.PrintSystem.Log($"-----------UiManageStrategy 初始化3D UI-----------", debug.PrintSystem.PrintBy.SunShuChao);
+            debug.PrintSystem.Log($"UiManageStrategy 设置3D Camera层级 layer：{cam.gameObject.layer}", debug.PrintSystem.PrintBy.SunShuChao);
+            debug.PrintSystem.Log($"UiManageStrategy 设置3D CameraCull cullingMask：{cam.cullingMask}", debug.PrintSystem.PrintBy.SunShuChao);
+            debug.PrintSystem.Log($"UiManageStrategy 设置3D Camera位置 localPosition：{cam.transform.localPosition}", debug.PrintSystem.PrintBy.SunShuChao);
+            debug.PrintSystem.Log($"-----------END-----------", debug.PrintSystem.PrintBy.SunShuChao);
         }
 
         // 只有不在队列里面才是真正的关闭
@@ -227,9 +227,22 @@ namespace ASeKi.ui
             }
         }
 
-        public void Clear()
+        public void Clear(UiBase remainOne = null)
         {
-            // FrontMask.SetFrontMask(0f);
+            // 根据不销毁的UI决定保留哪些Mask，后续有需要再进行处理
+            // if(null == remainOne || !(remainOne.OpenType == UiOpenType.UOT_POP_UP))
+            // {
+            //     FrontMask.SetFrontMask(0f);
+            // }
+            // if (null == remainOne || !(remainOne.OpenType == UiOpenType.UOT_IMPORTANT_POP_UP))
+            // {
+            //     ImportantMessageMask.SetFrontMask(0f);
+            // }
+            // if (null == remainOne || !(remainOne.OpenType == UiOpenType.UOT_MESSAGE_POP_UP))
+            // {
+            //     MessageMask.SetFrontMask(0f);
+            // }
+            
             popUpWindowRoot.gameObject.SetActive(false);
             fullScreenCavases.Clear();
             popUpWindows.Clear();
@@ -269,7 +282,7 @@ namespace ASeKi.ui
             }
 
             LinkedListNode<UiBase> lastNode = fullScreenCavases.Last;
-            if(lastNode == null || lastNode.Value.State == UiState.Hide)
+            if(lastNode == null || lastNode.Value.State != UiState.Show && lastNode.Value.State != UiState.ShowingAnim)
             {
                 fullScreenCavases.AddLast(ui);
                 ui.transform.SetParent(fullScreenRoot);

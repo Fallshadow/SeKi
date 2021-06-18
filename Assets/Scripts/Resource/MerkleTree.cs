@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ASeKi.Resource
+namespace act.Resource
 {
     public unsafe struct MerkleTree : System.IDisposable
     {

@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using ASeKi.debug;
 
-namespace ASeKi.AssetBundleCore
+namespace act.AssetBundleCore
 {
     public interface ISyncProxy
     {
@@ -45,27 +46,44 @@ namespace ASeKi.AssetBundleCore
 
         public virtual void Addreference()
         {
-            // 卸载后，AB没被卸载，但又重新引用它,重新加回自己包的引用
-            if(reference == 0)
+            //卸载后，AB没被卸载，但又重新引用它,重新加回自己包的引用
+            if (reference == 0)
             {
-                ASeKi.debug.PrintSystem.Log($"Add reference asset {AssetHash} ab {assetInfo.ownerBundleHash}", debug.PrintSystem.PrintBy.sunshuchao);
+                PrintSystem.Log($"Add reference asset {AssetHash} ab {assetInfo.ownerBundleHash}");
                 var myProxy = getDepProxy(assetInfo.ownerBundleHash);
                 myProxy.AddAssetsReference();
             }
-
+            
             reference++;
+        }
+
+        public virtual void DefReference()
+        {
+            reference--;
+
+            if (reference == 0)
+            {
+                Release();
+            }
+        }
+        
+        public virtual void Release()
+        {
+            var hash = assetInfo.hash;
+            var depABs = manager.assetDependInfos[assetInfo.hash];
+            var myABHash = depABs[0].abHash;
+            var myProxy = getDepProxy(myABHash);
+            if (myProxy != null)
+            {
+                myProxy.RemoveAssetsReference();
+            }
         }
 
         AssetBundleProxy getDepProxy(int abHash)
         {
             return manager.GetABProxy(abHash);
         }
-
-        public void DefReference()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public void Destroy()
         {
             throw new NotImplementedException();
@@ -102,7 +120,7 @@ namespace ASeKi.AssetBundleCore
 
             if(!manager.assetDependInfos.TryGetValue(assetInfo.hash, out depABs))
             {
-                debug.PrintSystem.Log($"Current AssetInfo{assetInfo.asset} don't in the assetDepend List!");
+                PrintSystem.Log($"Current AssetInfo{assetInfo.asset} don't in the assetDepend List!");
                 return;
             }
 
