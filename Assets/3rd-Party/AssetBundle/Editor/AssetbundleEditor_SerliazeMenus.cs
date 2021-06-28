@@ -38,5 +38,14 @@ namespace act.AssetBundleUtility
             UnityEditor.EditorUtility.DisplayProgressBar("弹窗", "依赖信息生成完毕！", 1f);
             UnityEditor.EditorUtility.ClearProgressBar();
         }
+        
+        [MenuItem("Rex/AssetBundle_yfn/SerializeAssetDepenceInfoForFastMode/ScriptableObject")]
+        private static void SerializeAssetDepenceInfoForFastMode_ScriptableObject()
+        {
+            EditorUtility.DisplayProgressBar("弹窗", "正在快速生成依赖信息...SO", 0.25f);
+            AssetBundlePackageManager.SerializeAssetDepenceInfoForFastMode(new AssetBundleGrouper_ScriptableObject());
+            EditorUtility.DisplayProgressBar("弹窗", "依赖信息生成完毕！", 1f);
+            EditorUtility.ClearProgressBar();
+        }
     }
 }

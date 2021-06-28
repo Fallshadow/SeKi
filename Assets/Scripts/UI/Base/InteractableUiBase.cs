@@ -17,6 +17,7 @@ namespace ASeKi.ui
         public override void OnCreate()
         {
             base.OnCreate();
+            graphicRaycaster = GetComponent<GraphicRaycaster>();
             SetInteractable(false);
         }
         public void SetInteractable(bool isInteractable)

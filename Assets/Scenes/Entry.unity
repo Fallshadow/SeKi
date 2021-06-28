@@ -411,7 +411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   debugRoot: {fileID: 580700427}
   Fps: {fileID: 1842858512}
-  uiCameraEventSystem: {fileID: 0}
+  uiCameraEventSystem: {fileID: 402646924}
   uiCamera: {fileID: 49104455}
   photoCamera: {fileID: 640672875}
   perspectiveCamera: {fileID: 797068097}

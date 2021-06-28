@@ -13,6 +13,7 @@
 
         #region SO Path
         
+        public const string SO_PATTERN = "*.asset";
         public const string SO_FOLDER = "ScriptableObject/";
         public const string SO_ASSET_PATH = ASSET_FOLDER + RESOURCES_FOLDER + SO_FOLDER;
         public const string SO_EXT = ".asset";

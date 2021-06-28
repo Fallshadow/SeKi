@@ -100,7 +100,7 @@ namespace ASeKi.AssetBundleCore
             }
 #endif
 #if UNITY_EDITOR && DEBUG_RESOURCE
-            if (!bDisbaleAssetBundle && !manager.ExistAsset(hashCode))
+            if (!bDisbaleAssetBundle && fastModeManager.ExistAsset(hashCode))
             {
                 debug.PrintSystem.LogWarning(string.Format("[Asset Load] AssetBunlde can't found {0} LoadAsset by FastMode", hashCode));
                 return fastModeManager.LoadAsset<T>(hashCode);

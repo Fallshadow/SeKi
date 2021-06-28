@@ -197,6 +197,7 @@
               <e p="AssetBundlePackageManager.cs" t="Include" />
               <e p="AssetGroup.cs" t="Include" />
               <e p="Grouper" t="Include">
+                <e p="AssetBundleGrouper_ScriptableObject.cs" t="Include" />
                 <e p="AssetBundleGrouper_UI.cs" t="Include" />
               </e>
             </e>
